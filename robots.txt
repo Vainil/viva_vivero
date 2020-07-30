@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /www/vivavivero/wordpress/wp-admin/
+Allow: /www/vivavivero/wordpress/wp-admin/admin-ajax.php

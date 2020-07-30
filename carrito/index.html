@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+
+        <title>Carrito</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://vainil.github.io/viva_vivero/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-vendors-style-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-style-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shims-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/themeisle-companion/obfx_modules/gutenberg-blocks/assets/fontawesome/css/v4-shims.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="themeisle-block_styles-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/themeisle-companion/vendor/codeinwp/gutenberg-blocks/build/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="pie_front_css-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/pie-register/assets/css/front.css" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/css/select2.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-layout-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/css/woocommerce.css" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="store-lite-woocommerce-style-css" href="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/twp/css/woocommerce.css" type="text/css" media="all">
+<link rel="stylesheet" id="photoswipe-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="photoswipe-default-skin-css" href="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="themeisle-gutenberg-post-27.css-css" href="https://vainil.github.io/viva_vivero/wp-content/uploads/themeisle-gutenberg/post-27.css" type="text/css" media="all">
+<link rel="stylesheet" id="store-lite-google-fonts-css" href="https://fonts.googleapis.com/css?family=Open%20Sans:300,300i,400,400i,600,600i,700,700i" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="ionicons-css" href="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/ionicons/css/ionicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="slick-css" href="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/slick/css/slick.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css" href="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/magnific-popup/magnific-popup.css" type="text/css" media="all">
+<link rel="stylesheet" id="sidr-nav-css" href="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/sidr/css/jquery.sidr.dark.css" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css" href="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/wow/css/animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="store-lite-style-css" href="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/style.css" type="text/css" media="all">
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/pie-register/assets/js/dialog.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pie_pr_dec_vars = {"ajaxURL":"https:\/\/vainil.github.io\/viva_vivero\/wp-admin\/admin-ajax.php","dateY":"2020","piereg_startingDate":"1901","piereg_endingDate":"2020","pass_strength_indicator_label":"Strength Indicator","pass_very_weak_label":"Very Weak","pass_weak_label":"Weak","pass_medium_label":"Medium","pass_strong_label":"Strong","pass_mismatch_label":"Mismatch","ValidationMsgText1":"ninguno\/a","ValidationMsgText2":"* Este campo es requerido","ValidationMsgText3":"* Por favor seleccione una opci\u00f3n","ValidationMsgText4":"* Esta casilla de verificaci\u00f3n es obligatoria","ValidationMsgText5":"Ambos campos de rango de fechas son obligatorios","ValidationMsgText6":"* El campo debe ser igual a la prueba","ValidationMsgText7":"* Inv\u00e1lido ","ValidationMsgText8":"Rango de Fechas","ValidationMsgText9":"Fecha Hora Rango","ValidationMsgText10":"* M\u00ednimo ","ValidationMsgText11":" caracteres requeridos","ValidationMsgText12":"* M\u00e1xima ","ValidationMsgText13":" caracteres permitidoss","ValidationMsgText14":"* Deba que completar uno de los siguientes campos","ValidationMsgText15":"* El valor m\u00ednimo es ","ValidationMsgText16":"* Fecha antes de ","ValidationMsgText17":"* Fecha pasada ","ValidationMsgText18":" opciones permitidas","ValidationMsgText19":"* Por favor seleccione ","ValidationMsgText20":" opciones","ValidationMsgText21":"* Los campos no coinciden","ValidationMsgText22":"* N\u00famero del tarjeta de cr\u00e9dito est\u00e1 inv\u00e1lida","ValidationMsgText23":"* N\u00famero de tel\u00e9fono inv\u00e1lido","ValidationMsgText24":"* N\u00famero de tel\u00e9fono no v\u00e1lido. Formato permitido (XXX) xxx-xxxx","ValidationMsgText25":"* M\u00ednimo 10 D\u00edgitos comenzando por el c\u00f3digo del pa\u00eds sin el signo +.","ValidationMsgText26":"* Correo electr\u00f3nico inv\u00e1lido","ValidationMsgText27":"* No es un n\u00famero v\u00e1lido","ValidationMsgText28":"* N\u00famero inv\u00e1lido","ValidationMsgText29":"* Mes inv\u00e1lido","ValidationMsgText30":"* D\u00eda inv\u00e1lido","ValidationMsgText31":"* A\u00f1o inv\u00e1lido","ValidationMsgText32":"* Extensi\u00f3n de archivo inv\u00e1lido","ValidationMsgText33":"* Fecha inv\u00e1lida, debe estar en formato AAAA-MM-DD","ValidationMsgText34":"* Direcci\u00f3n IP inv\u00e1lida","ValidationMsgText35":"* URL inv\u00e1lida","ValidationMsgText36":"* Solo n\u00fameros","ValidationMsgText37":"* S\u00f3lo letras","ValidationMsgText38":"* No se permiten caracteres especiales","ValidationMsgText39":"* Este nombre de usuario ya existe","ValidationMsgText40":"* Validando, por favor espere","ValidationMsgText41":"* El nombre de usuario est\u00e1 disponible","ValidationMsgText42":"* Este nombre de usuario ya existe","ValidationMsgText43":"* Validando, por favor espere","ValidationMsgText44":"* Este nombre no est\u00e1 disponible","ValidationMsgText45":"* Este nombre est\u00e1 disponible","ValidationMsgText46":"* Validando, por favor espere","ValidationMsgText47":"* Este nombre no est\u00e1 disponible","ValidationMsgText48":"* Por favor ingrese HOLA","ValidationMsgText49":"* Fecha inv\u00e1lida","ValidationMsgText50":"* Fecha o formato de fecha invalidos","ValidationMsgText51":"Formato esperado: ","ValidationMsgText52":"mm\/dd\/aaaa HH: mm: SS AM | PM o ","ValidationMsgText53":"aaaa-mm-dd hh:mm:ss AM|PM","ValidationMsgText54":"Nombre de usuario(a) inv\u00e1lido(a)","ValidationMsgText55":"* Archivo invalido","ValidationMsgText56":"* El valor maximo es ","ValidationMsgText57":"* S\u00f3lo letras alfab\u00e9ticas","ValidationMsgText58":"* Solo se permiten caracteres alfanum\u00e9ricos","ValidationMsgText61":"* Tama\u00f1o de archivo no v\u00e1lido","ValidationMsgText59":"Borrar","ValidationMsgText60":"Editar","reCaptcha_public_key":"","reCaptcha_language":"en","prRegFormsIds":["reg_form_1"],"not_widgetTheme":"red","is_widgetTheme":"red","not_forgot_widgetTheme":"red","is_forgot_widgetTheme":[],"reg_forms_theme":{"form":{"type":"form","meta":"0","label":"","desc":"Por favor, rellene los siguientes espacios en el formulario para registrarse.","css":"","label_alignment":"top","user_verification":"0"},"3":{"id":"3","type":"name","label":"Nombre(s)","validation_rule":"","label2":"Apellidos","desc":"","required":"3","placeholder":"","placeholder2":"","validation_message":"","css":"","show_in_profile":"1"},"4":{"id":"4","type":"phone","label":"Telefono","desc":"","default_value":"","phone_format":"standard","validation_message":"","css":"","show_in_profile":"1"},"1":{"remove":"0","id":"1","type":"email","meta":"0","required":"1","label":"Correo Electr\u00f3nico","validation_rule":"email","label2":"Confirmar Correo Electr\u00f3nico","desc":"","placeholder":"","placeholder2":"","validation_message":"","css":""},"0":{"id":"0","type":"username","meta":"0","required":"1","label":"Nombre de usuario","validation_rule":"","desc":"","placeholder":"","validation_message":"","css":""},"2":{"remove":"0","id":"2","type":"password","required":"1","validation_rule":"","meta":"0","label":"Contrase\u00f1a","label2":"Confirmar Contrase\u00f1a","desc":"","placeholder":"","placeholder2":"","validation_message":"","css":"","show_meter":"1","pass_strength_indicator_label":"Strength Indicator","pass_very_weak_label":"Very Weak","pass_weak_label":"Weak","pass_medium_label":"Medium","pass_strong_label":"Strong","pass_mismatch_label":"Mismatch","restrict_strength":"1","strength_message":"Weak Password"},"submit":{"label":"Submit","type":"submit","remove":"0","meta":"0","text":"Registrate","reset":"0","reset_text":"Reset","confirmation":"text","redirect_url":"","page":"131","message":"Registro Exitoso\r\n\u00a1Gracias por registrarte!"}},"matchCapResult1":"MjY=","matchCapResult2":"ODAw","matchCapResult3":"OQ==","matchCapColors":["rgba(0, 0, 0, 0.6)","rgba(153, 31, 0, 0.9)","rgba(64, 171, 229,0.8)","rgba(0, 61, 21, 0.8)","rgba(0, 0, 204, 0.7)","rgba(0, 0, 0, 0.5)","rgba(198, 81, 209, 1.0)","rgba(0, 0, 999, 0.5)","rgba(0, 0, 0, 0.5)","rgba(0, 0, 0, 0.5)","rgba(255, 63, 143, 0.9)"],"matchCapImgColor":"rgba(0, 61, 21, 0.8)","matchCapImgURL":"https:\/\/vainil.github.io\/viva_vivero\/wp-content\/plugins\/pie-register\/assets\/images\/math_captcha\/3.png","matchCapHTML":"33 - 19 = ","is_socialLoginRedirect":"","socialLoginRedirectRenewAccount":"","isSocialLoginRedirectOnLogin":"","socialLoginRedirectOnLoginURL":"","pie_payment_methods_data":[],"prTimedFieldVal":"20-07-30 16:41:55"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/pie-register/assets/js/prVariablesDeclaration.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/pie-register/assets/js/datepicker.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/pie-register/assets/js/jquery.alphanum.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/pie-register/assets/js/piereg_validation.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"https:\/\/vainil.github.io\/viva_vivero\/wp-includes\/js\/zxcvbn.min.js"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/zxcvbn-async.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pf = {"spam":{"label":"\u00a1Soy un humano!","value":"7d5b7ea63c"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/pirate-forms/public/js/custom-spam.js"></script>
+
+
+
+
+
+
+
+
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+		<style type="text/css">
+					.site-title,
+			.site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+				</style>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #dda044; background-image: url("https://vainil.github.io/viva_vivero/wp-content/uploads/2020/07/fondo-wp-scaled.jpg"); background-position: left top; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+</style>
+	<link rel="icon" href="https://vainil.github.io/viva_vivero/wp-content/uploads/2020/07/cropped-logo2-32x32.png" sizes="32x32">
+<link rel="icon" href="https://vainil.github.io/viva_vivero/wp-content/uploads/2020/07/cropped-logo2-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://vainil.github.io/viva_vivero/wp-content/uploads/2020/07/cropped-logo2-180x180.png">
+<meta name="msapplication-TileImage" content="https://vainil.github.io/viva_vivero/wp-content/uploads/2020/07/cropped-logo2-270x270.png">
+    </head>
+
+<body class="page-template-default page page-id-27 custom-background wp-custom-logo theme-store-lite woocommerce-cart woocommerce-page woocommerce-no-js no-sidebar elementor-default">
+
+    <div class="preloader">
+        <div class="layer"></div>
+        <div class="inner">
+            <figure>
+                <div class="preloader-spinner"></div>
+            </figure>
+                            <span>Cargando sitio</span>
+                    </div>
+    </div>
+
+    <div class="page-transition">
+        <div class="layer"></div>
+    </div>
+
+
+
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+<div class="top-leadbar">
+    </div>
+
+<div class="site-topbar">
+    <div class="container">
+        <div class="twp-topbar-area">
+            <div class="topbar-left">
+                
+                
+            </div>
+            <div class="topbar-right">
+                                    <div class="social-icons">
+                        <div class="menu-registro-iniciar-sesion-container"><ul id="social-menu" class=""><li id="menu-item-225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-225"><a href="https://vainil.github.io/viva_vivero/inicio-sesion/"><span class="screen-reader-text">Inicio sesion</span></a></li>
+</ul></div>                    </div>
+                
+                            </div>
+        </div>
+    </div>
+</div>
+
+<header id="masthead" class="site-header">
+    <div class="container">
+        <div class="twp-header-area">
+            <div class="twp-headerarea-left">
+                <div class="site-branding">
+                    <a href="https://vainil.github.io/viva_vivero/" class="custom-logo-link" rel="home"><img width="250" height="160" src="https://vainil.github.io/viva_vivero/wp-content/uploads/2020/07/logo2-e1595853323989.png" class="custom-logo" alt=""></a>                        <p class="site-title">
+                            <a href="https://vainil.github.io/viva_vivero/" rel="home"></a>
+                        </p>
+                                    </div>
+            </div>
+            <div class="twp-headerarea-right">
+                <nav id="site-navigation" class="main-navigation">
+                    <div class="main-navigation-primary">
+                        <div class="toggle-menu" aria-controls="primary-menu" aria-expanded="false">
+                            <a class="offcanvas-toggle" href="#">
+                                <div class="offcanvas-trigger">
+                                   <span class="menu-label">
+                                        Menu                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="menu"><ul id="primary-menu" class="menu"><li class="brand-home"><a title="Home" href="https://vainil.github.io/viva_vivero"><span class="icon ion-ios-home"></span></a></li><li id='"menu-item-84"' class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-84"><a href="https://vainil.github.io/viva_vivero/">inicio</a></li>
+<li id='"menu-item-75"' class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-75"><a href="https://vainil.github.io/viva_vivero/catalogo/">Catálogo <span class="ion ion-ios-arrow-down"></span></a>
+<ul class="dropdown-menu depth_0">
+	<li id='"menu-item-311"' class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-311"><a href="https://vainil.github.io/viva_vivero/categoria-producto/plantas-con-flor/">Plantas con flor</a></li>
+	<li id='"menu-item-314"' class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-314"><a href="https://vainil.github.io/viva_vivero/categoria-producto/plantas-sin-flor/">Plantas sin flor</a></li>
+	<li id='"menu-item-313"' class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-313"><a href="https://vainil.github.io/viva_vivero/categoria-producto/arboles/">Arboles</a></li>
+	<li id='"menu-item-310"' class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-310"><a href="https://vainil.github.io/viva_vivero/categoria-producto/arbustos/">Arbustos</a></li>
+	<li id='"menu-item-312"' class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-312"><a href="https://vainil.github.io/viva_vivero/categoria-producto/hierbas/">Hierbas</a></li>
+</ul></li>
+<li id='"menu-item-76"' class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-76"><a href="https://vainil.github.io/viva_vivero/nuestra-tierra/">Nuestra tierra <span class="ion ion-ios-arrow-down"></span></a>
+<ul class="dropdown-menu depth_0">
+	<li id='"menu-item-304"' class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-304"><a href="https://vainil.github.io/viva_vivero/category/cuidados-para-plantas/">Cuidados para plantas</a></li>
+	<li id='"menu-item-305"' class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-305"><a href="https://vainil.github.io/viva_vivero/category/cultivacion/">Cultivación</a></li>
+</ul></li>
+<li id='"menu-item-77"' class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://vainil.github.io/viva_vivero/contacto/">Contacto</a></li>
+<li id='"menu-item-303"' class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="https://vainil.github.io/viva_vivero/registro-2/">Registro</a></li>
+</ul></div>                    </div>
+                    <div class="main-navigation-secondary">
+                        
+                    </div>
+                </nav>
+
+                                    <span class="twp-minicart">
+                        
+		<div class="minicart-title-handle">
+            <div class="twp-cart-icon"></div>
+			
+		<div style="opacity: 0" class="cart-total-item">
+			<a class="cart-contents" href="https://vainil.github.io/viva_vivero/carrito/" title="View your shopping cart">
+								<span class="amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>0.00</span></span> <span class="count">0 items</span>
+			</a>
+			<span class="item-count">0</span>
+		</div>
+			</div>
+
+        <div class="minicart-content">
+            <div class="site-header-cart">
+                <div class="total-details current-menu-item">
+                	
+		<div style="opacity: 0" class="cart-total-item">
+			<a class="cart-contents" href="https://vainil.github.io/viva_vivero/carrito/" title="View your shopping cart">
+								<span class="amount"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>0.00</span></span> <span class="count">0 items</span>
+			</a>
+			<span class="item-count">0</span>
+		</div>
+	                </div>
+                <div class="twp-minicart-content">
+                                    </div>
+            </div>
+        </div>
+	
+	                    </span>
+                            </div>
+        </div>
+    </div>
+</header>
+
+
+            <div class="twp-secondary-navbar">
+                <div class="container">
+                    <div class="twp-header-area">
+                        
+                                                    <div class="twp-headerarea-center hidden-xs">
+                                
+        <div class="twp-product-search">
+            <form class="twp-search-form" method="get" action="https://vainil.github.io/viva_vivero/">
+                <div class="twp-search-wrapper">
+                    <div class="twp-cat-list hidden-xs">
+                        <select class="twp-product-cats" id="twp-product-cat" name="product_cat"><option value="">All Category</option><option value="arboles">Arboles</option><option value="arbustos">Arbustos</option><option value="hierbas">Hierbas</option><option value="plantas-con-flor">Plantas con flor</option><option value="plantas-sin-flor">Plantas sin flor</option><option value="sin-categorizar">Sin categorizar</option></select>                    </div>
+
+                    <div class="twp-search-text">
+                        <input type="hidden" name="post_type" value="product">
+                        <input type="text" name="s" class="twp-form-field" value="" placeholder="I'm searching for...">
+                    </div>
+
+
+                    <button type="submit" class="twp-search-submit">
+                        Search
+                    </button>
+
+                </div>
+            </form>
+        </div>
+                                    </div>
+                        
+                            <div class="twp-headerarea-right">
+
+                                
+                                    <div class="twp-user-mgmt header-right-item">
+                                        <div class="twp-user-icon">
+                                            <a href="https://vainil.github.io/viva_vivero/login">
+                                                <i class="nav-icon-right twp-user-contact"></i>
+                                            </a>
+                                        </div>
+                                                                                <div class="twp-user-tools hidden-sm hidden-xs">
+                                            <a href="https://vainil.github.io/viva_vivero/login" class="user-tools-link twp-user-login">
+                                                Log in                                            </a>
+                                            <a href="https://vainil.github.io/viva_vivero/login" class="user-tools-link twp-user-register">
+                                                Register                                            </a>
+                                        </div>
+                                    
+                                    </div>
+
+                                
+                                
+                            </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+    
+
+
+        <div class="twp-inner-banner">
+            <div class="wrapper">
+
+                <nav role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><ul class="trail-items" itemscope itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="2"><meta name="itemListOrder" content="Ascending"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="trail-item trail-begin"><a href="https://vainil.github.io/viva_vivero/" rel="home" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="trail-item trail-end"><a href="https://vainil.github.io/viva_vivero/carrito/" itemprop="item"><span itemprop="name">Carrito</span></a><meta itemprop="position" content="2"></li></ul></nav>
+                <div class="twp-banner-details">
+
+                    <header class="entry-header"><h1 class="entry-title entry-title-big">Carrito</h1></header>
+                </div>
+
+            </div>
+        </div>
+    
+
+    <div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			
+<article id="post-27" class="post-27 page type-page status-publish hentry">
+
+	<div class="entry-content">
+		<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div><p class="cart-empty woocommerce-info">Tu carrito está vacío.</p>	<p class="return-to-shop">
+		<a class="button wc-backward" href="https://vainil.github.io/viva_vivero/catalogo/">
+			Volver a la tienda		</a>
+	</p>
+</div>
+	</div>
+
+	</article>
+
+		</main>
+	</div>
+
+</div>
+
+<div id="offcanvas-menu">
+    <div class="close-offcanvas-menu offcanvas-item">
+        <div class="offcanvas-close">
+            <span>
+               Close            </span>
+            <span class="ion-ios-close-empty meta-icon meta-icon-large"></span>
+        </div>
+    </div>
+    
+            <div id="primary-nav-offcanvas" class="offcanvas-navigation offcanvas-item">
+            <div class="offcanvas-title">
+                Main Navigation            </div>
+            <div class="menu"><ul id="primary-menu" class="menu"><li class="brand-home"><a title="Home" href="https://vainil.github.io/viva_vivero"><span class="icon ion-ios-home"></span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-84"><a href="https://vainil.github.io/viva_vivero/">inicio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-75"><a href="https://vainil.github.io/viva_vivero/catalogo/">Catálogo</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-311"><a href="https://vainil.github.io/viva_vivero/categoria-producto/plantas-con-flor/">Plantas con flor</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-314"><a href="https://vainil.github.io/viva_vivero/categoria-producto/plantas-sin-flor/">Plantas sin flor</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-313"><a href="https://vainil.github.io/viva_vivero/categoria-producto/arboles/">Arboles</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-310"><a href="https://vainil.github.io/viva_vivero/categoria-producto/arbustos/">Arbustos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-312"><a href="https://vainil.github.io/viva_vivero/categoria-producto/hierbas/">Hierbas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-76"><a href="https://vainil.github.io/viva_vivero/nuestra-tierra/">Nuestra tierra</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-304"><a href="https://vainil.github.io/viva_vivero/category/cuidados-para-plantas/">Cuidados para plantas</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-305"><a href="https://vainil.github.io/viva_vivero/category/cultivacion/">Cultivación</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://vainil.github.io/viva_vivero/contacto/">Contacto</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-303"><a href="https://vainil.github.io/viva_vivero/registro-2/">Registro</a></li>
+</ul></div>        </div>
+    
+
+            <div id="secondary-nav-offcanvas" class="offcanvas-navigation offcanvas-item">
+            <div class="offcanvas-title">
+                Secondary Navigation            </div>
+                    </div>
+    
+            <div class="offcanvas-social offcanvas-item">
+            <div class="offcanvas-title">
+                Social profiles            </div>
+            <div class="social-icons">
+                <div class="menu-registro-iniciar-sesion-container"><ul id="social-menu" class=""><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-225"><a href="https://vainil.github.io/viva_vivero/inicio-sesion/"><span class="screen-reader-text">Inicio sesion</span></a></li>
+</ul></div>            </div>
+        </div>
+    </div>
+
+
+<div class="scroll-up">
+    <i class="ion ion-ios-arrow-up"></i>
+</div>
+
+
+    <div id="twp-popup-addtocart">
+        <a id="twp-close-popup" href="javascript:void(0)">
+            <i class="ion ion-md-close"></i>
+        </a>
+        <h4><span></span> has been added to your cart</h4>
+        <a href="https://vainil.github.io/viva_vivero/carrito/">View Cart</a>
+    </div>
+
+<footer id="colophon" class="site-footer">
+    
+            <div class="footer-middle">
+            <div class="container">
+                <div class="twp-row">
+
+                    <div class="column">
+                        <div class="footer-middle-seperator"></div>
+                    </div>
+                    
+                                            <div class="column column-three column-full-sm">
+                            <div class="footer-social">
+                                <div class="social-icons">
+                                    <div class="menu-registro-iniciar-sesion-container"><ul id="social-menu" class=""><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-225"><a href="https://vainil.github.io/viva_vivero/inicio-sesion/"><span class="screen-reader-text">Inicio sesion</span></a></li>
+</ul></div>                                </div>
+                            </div>
+                        </div>
+                                        
+                    
+                                            <div class="column column-seven column-full-sm">
+                            <div class="footer-menu">
+                                <div class="menu"><ul id="footer-menu" class="menu"><li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-147"><a href="https://vainil.github.io/viva_vivero/aviso-de-privacidad/">Aviso de privacidad</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://vainil.github.io/viva_vivero/terminos-y-condiciones/">Términos y condiciones</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-230"><a href="https://vainil.github.io/viva_vivero/2020/07/27/preguntas-frecuentes/">Preguntas frecuentes</a></li>
+<li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="https://vainil.github.io/viva_vivero/contacto/">Contacto</a></li>
+<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="https://vainil.github.io/viva_vivero/iniciar-session-login/">Iniciar sesion/Login</a></li>
+</ul></div>                            </div>
+                        </div>
+                                        
+
+                    <div class="column">
+                        <div class="footer-middle-seperator"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    <div class="footer-bottom">
+        <div class="wrapper">
+            <div class="footer-info">
+                
+                <div class="site-info">
+                    © Copyright All Rights Reserved MustardTeam.                    Theme: <span>Store Lite</span> by <a href="https://www.themeinwp.com/"><span>Themeinwp</span></a>                </div>
+
+                
+                    <div class="twp-payment-processor">
+                        <ul>
+                            
+                                                            <li>
+                                    <span class="twp-payment-icon twp-icon-visa"></span>
+                                </li>
+                            
+                                                            <li>
+                                    <span class="twp-payment-icon twp-icon-mastercard"></span>
+                                </li>
+                            
+                                                            <li>
+                                    <span class="twp-payment-icon twp-icon-amex"></span>
+                                </li>
+                            
+                            
+                        </ul>
+                    </div>
+
+                
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" aria-label="Cerrar (Esc)"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Compartir"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Cambiar a pantalla completa"></button>
+				<button class="pswp__button pswp__button--zoom" aria-label="Ampliar/Reducir"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Anterior (flecha izquierda)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Siguiente (flecha derecha)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/core.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/widget.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/mouse.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/resizable.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/draggable.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/button.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/position.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/dialog.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/progressbar.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/pie-register/assets/js/prVariablesDeclarationFooter.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pwsL10n = {"unknown":"Fortaleza de la contrase\u00f1a desconocida","short":"Muy d\u00e9bil","bad":"D\u00e9bil","good":"Medio","strong":"Fuerte","mismatch":"No coinciden"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-admin/js/password-strength-meter.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/pie-register/assets/js/pie_password_checker.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-includes/js/jquery/ui/datepicker.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Cerrar","currentText":"Hoy","monthNames":["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"monthNamesShort":["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],"nextText":"Siguiente","prevText":"Anterior","dayNames":["domingo","lunes","martes","mi\u00e9rcoles","jueves","viernes","s\u00e1bado"],"dayNamesShort":["Dom","Lun","Mar","Mi\u00e9","Jue","Vie","S\u00e1b"],"dayNamesMin":["D","L","M","X","J","V","S"],"dateFormat":"d \\dd\\e MM \\dd\\e yy","firstDay":1,"isRTL":false});});
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/www\/vivavivero\/wordpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/www\/vivavivero\/wordpress\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"https:\/\/vainil.github.io\/viva_vivero\/carrito\/","is_cart":"1","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/www\/vivavivero\/wordpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/www\/vivavivero\/wordpress\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_country_select_params = {"countries":"{\"AF\":[],\"AO\":{\"BGO\":\"Bengo\",\"BLU\":\"Benguela\",\"BIE\":\"Bi\\u00e9\",\"CAB\":\"Cabinda\",\"CNN\":\"Cunene\",\"HUA\":\"Huambo\",\"HUI\":\"Hu\\u00edla\",\"CCU\":\"Kuando Kubango\",\"CNO\":\"Kwanza-Norte\",\"CUS\":\"Kwanza-Sul\",\"LUA\":\"Luanda\",\"LNO\":\"Lunda-Norte\",\"LSU\":\"Lunda-Sul\",\"MAL\":\"Malanje\",\"MOX\":\"Moxico\",\"NAM\":\"Namibe\",\"UIG\":\"U\\u00edge\",\"ZAI\":\"Zaire\"},\"AR\":{\"C\":\"Ciudad Aut\\u00f3noma de Buenos Aires\",\"B\":\"Buenos Aires\",\"K\":\"Catamarca\",\"H\":\"Chaco\",\"U\":\"Chubut\",\"X\":\"C\\u00f3rdoba\",\"W\":\"Corrientes\",\"E\":\"Entre R\\u00edos\",\"P\":\"Formosa\",\"Y\":\"Jujuy\",\"L\":\"La Pampa\",\"F\":\"La Rioja\",\"M\":\"Mendoza\",\"N\":\"Misiones\",\"Q\":\"Neuqu\\u00e9n\",\"R\":\"R\\u00edo Negro\",\"A\":\"Salta\",\"J\":\"San Juan\",\"D\":\"San Luis\",\"Z\":\"Santa Cruz\",\"S\":\"Santa Fe\",\"G\":\"Santiago del Estero\",\"V\":\"Tierra del Fuego\",\"T\":\"Tucum\u00e1n\"},\"AT\":[],\"AU\":{\"ACT\":\"Australia Central\",\"NSW\":\"Nueva Gales del Sur\",\"NT\":\"Northern Territory\",\"QLD\":\"Queensland\",\"SA\":\"South Australia\",\"TAS\":\"Tasmania\",\"VIC\":\"Victoria\",\"WA\":\"Western Australia\"},\"AX\":[],\"BD\":{\"BD-05\":\"Bagerhat\",\"BD-01\":\"Bandarban\",\"BD-02\":\"Barguna\",\"BD-06\":\"Barishal\",\"BD-07\":\"Bhola\",\"BD-03\":\"Bogura\",\"BD-04\":\"Brahmanbaria\",\"BD-09\":\"Chandpur\",\"BD-10\":\"Chattogram\",\"BD-12\":\"Chuadanga\",\"BD-11\":\"Cox's Bazar\",\"BD-08\":\"Cumilla\",\"BD-13\":\"Dhaka\",\"BD-14\":\"Dinajpur\",\"BD-15\":\"Faridpur \",\"BD-16\":\"Feni\",\"BD-19\":\"Gaibandha\",\"BD-18\":\"Gazipur\",\"BD-17\":\"Gopalganj\",\"BD-20\":\"Habiganj\",\"BD-21\":\"Jamalpur\",\"BD-22\":\"Jashore\",\"BD-25\":\"Jhalokati\",\"BD-23\":\"Jhenaidah\",\"BD-24\":\"Joypurhat\",\"BD-29\":\"Khagrachhari\",\"BD-27\":\"Khulna\",\"BD-26\":\"Kishoreganj\",\"BD-28\":\"Kurigram\",\"BD-30\":\"Kushtia\",\"BD-31\":\"Lakshmipur\",\"BD-32\":\"Lalmonirhat\",\"BD-36\":\"Madaripur\",\"BD-37\":\"Magura\",\"BD-33\":\"Manikganj \",\"BD-39\":\"Meherpur\",\"BD-38\":\"Moulvibazar\",\"BD-35\":\"Munshiganj\",\"BD-34\":\"Mymensingh\",\"BD-48\":\"Naogaon\",\"BD-43\":\"Narail\",\"BD-40\":\"Narayanganj\",\"BD-42\":\"Narsingdi\",\"BD-44\":\"Natore\",\"BD-45\":\"Nawabganj\",\"BD-41\":\"Netrakona\",\"BD-46\":\"Nilphamari\",\"BD-47\":\"Noakhali\",\"BD-49\":\"Pabna\",\"BD-52\":\"Panchagarh\",\"BD-51\":\"Patuakhali\",\"BD-50\":\"Pirojpur\",\"BD-53\":\"Rajbari\",\"BD-54\":\"Rajshahi\",\"BD-56\":\"Rangamati\",\"BD-55\":\"Rangpur\",\"BD-58\":\"Satkhira\",\"BD-62\":\"Shariatpur\",\"BD-57\":\"Sherpur\",\"BD-59\":\"Sirajganj\",\"BD-61\":\"Sunamganj\",\"BD-60\":\"Sylhet\",\"BD-63\":\"Tangail\",\"BD-64\":\"Thakurgaon\"},\"BE\":[],\"BG\":{\"BG-01\":\"Blagoevgrad\",\"BG-02\":\"Burgas\",\"BG-08\":\"Dobrich\",\"BG-07\":\"Gabrovo\",\"BG-26\":\"Haskovo\",\"BG-09\":\"Kardzhali\",\"BG-10\":\"Kyustendil\",\"BG-11\":\"Lovech\",\"BG-12\":\"Montana\",\"BG-13\":\"Pazardzhik\",\"BG-14\":\"Pernik\",\"BG-15\":\"Pleven\",\"BG-16\":\"Plovdiv\",\"BG-17\":\"Razgrad\",\"BG-18\":\"Ruse\",\"BG-27\":\"Shumen\",\"BG-19\":\"Silistra\",\"BG-20\":\"Sliven\",\"BG-21\":\"Smolyan\",\"BG-23\":\"Sofia\",\"BG-22\":\"Sofia-Grad\",\"BG-24\":\"Stara Zagora\",\"BG-25\":\"Targovishte\",\"BG-03\":\"Varna\",\"BG-04\":\"Veliko Tarnovo\",\"BG-05\":\"Vidin\",\"BG-06\":\"Vratsa\",\"BG-28\":\"Yambol\"},\"BH\":[],\"BI\":[],\"BO\":{\"B\":\"Chuquisaca\",\"H\":\"Beni\",\"C\":\"Cochabamba\",\"L\":\"La Paz\",\"O\":\"Oruro\",\"N\":\"Pando\",\"P\":\"Potos\\u00ed\",\"S\":\"Santa Cruz\",\"T\":\"Tarija\"},\"BR\":{\"AC\":\"Acre\",\"AL\":\"Alagoas\",\"AP\":\"Amap\u00e1\",\"AM\":\"Amazonas\",\"BA\":\"Bahia\",\"CE\":\"Cear\u00e1\",\"DF\":\"Distrito Federal\",\"ES\":\"Esp\u00edrito Santo\",\"GO\":\"Goi\u00e1s\",\"MA\":\"Maranh\u00e3o\",\"MT\":\"Mato Grosso\",\"MS\":\"Mato Grosso del Sur\",\"MG\":\"Minas Gerais\",\"PA\":\"Par\u00e1\",\"PB\":\"Para\u00edba\",\"PR\":\"Paran\u00e1\",\"PE\":\"Pernambuco\",\"PI\":\"Piau\u00ed\",\"RJ\":\"Rio de Janeiro\",\"RN\":\"R\\u00edo Grande del Norte\",\"RS\":\"R\\u00edo Grande del Sur\",\"RO\":\"Rond\u00f4nia\",\"RR\":\"Roraima\",\"SC\":\"Santa Catalina\",\"SP\":\"S\u00e3o Paulo\",\"SE\":\"Sergipe\",\"TO\":\"Tocantins\"},\"CA\":{\"AB\":\"Alberta\",\"BC\":\"Columbia Brit\\u00e1nica\",\"MB\":\"Manitoba\",\"NB\":\"New Brunswick\",\"NL\":\"Newfoundland y Labrador\",\"NT\":\"Northwest Territories\",\"NS\":\"Nova Scotia\",\"NU\":\"Nunavut\",\"ON\":\"Ontario\",\"PE\":\"Isla del Pr\\u00edncipe Eduardo\",\"QC\":\"Quebec\",\"SK\":\"Saskatchewan\",\"YT\":\"Yukon Territory\"},\"CH\":{\"AG\":\"Aargau\",\"AR\":\"Appenzell Ausserrhoden\",\"AI\":\"Appenzell Innerrhoden\",\"BL\":\"Basel-Landschaft\",\"BS\":\"Basel-Stadt\",\"BE\":\"Bern\",\"FR\":\"Fribourg\",\"GE\":\"Geneva\",\"GL\":\"Glarus\",\"GR\":\"Graub\u00fcnden\",\"JU\":\"Jura\",\"LU\":\"Luzern\",\"NE\":\"Neuch\u00e2tel\",\"NW\":\"Nidwalden\",\"OW\":\"Obwalden\",\"SH\":\"Schaffhausen\",\"SZ\":\"Schwyz\",\"SO\":\"Solothurn\",\"SG\":\"St. Gallen\",\"TG\":\"Thurgau\",\"TI\":\"Ticino\",\"UR\":\"URI\",\"VS\":\"Valais\",\"VD\":\"Vaud\",\"ZG\":\"Zug\",\"ZH\":\"Z\u00fcrich\"},\"CN\":{\"CN1\":\"Yunnan \\\/ \u4e91\u5357\",\"CN2\":\"Beijing \\\/ \u5317\u4eac\",\"CN3\":\"Tianjin \\\/ \u5929\u6d25\",\"CN4\":\"Hebei \\\/ \u6cb3\u5317\",\"CN5\":\"Shanxi \\\/ \u5c71\u897f\",\"CN6\":\"Inner Mongolia \\\/ \u5167\u8499\u53e4\",\"CN7\":\"Liaoning \\\/ \u8fbd\u5b81\",\"CN8\":\"Jilin \\\/ \u5409\u6797\",\"CN9\":\"Heilongjiang \\\/ \u9ed1\u9f99\u6c5f\",\"CN10\":\"Shanghai \\\/ \u4e0a\u6d77\",\"CN11\":\"Jiangsu \\\/ \u6c5f\u82cf\",\"CN12\":\"Zhejiang \\\/ \u6d59\u6c5f\",\"CN13\":\"Anhui \\\/ \u5b89\u5fbd\",\"CN14\":\"Fujian \\\/ \u798f\u5efa\",\"CN15\":\"Jiangxi \\\/ \u6c5f\u897f\",\"CN16\":\"Shandong \\\/ \u5c71\u4e1c\",\"CN17\":\"Henan \\\/ \u6cb3\u5357\",\"CN18\":\"Hubei \\\/ \u6e56\u5317\",\"CN19\":\"Hunan \\\/ \u6e56\u5357\",\"CN20\":\"Guangdong \\\/ \u5e7f\u4e1c\",\"CN21\":\"Guangxi Zhuang \\\/ \u5e7f\u897f\u58ee\u65cf\",\"CN22\":\"Hainan \\\/ \u6d77\u5357\",\"CN23\":\"Chongqing \\\/ \u91cd\u5e86\",\"CN24\":\"Sichuan \\\/ \u56db\u5ddd\",\"CN25\":\"Guizhou \\\/ \u8d35\u5dde\",\"CN26\":\"Shaanxi \\\/ \u9655\u897f\",\"CN27\":\"Gansu \\\/ \u7518\u8083\",\"CN28\":\"Qinghai \\\/ \u9752\u6d77\",\"CN29\":\"Ningxia Hui \\\/ \u5b81\u590f\",\"CN30\":\"Macao \\\/ \u6fb3\u95e8\",\"CN31\":\"Tibet \\\/ \u897f\u85cf\",\"CN32\":\"Xinjiang \\\/ \u65b0\u7586\"},\"CZ\":[],\"DE\":[],\"DK\":[],\"EE\":[],\"ES\":{\"C\":\"A Coru\u00f1a\",\"VI\":\"Araba\\\/\u00c1lava\",\"AB\":\"Albacete\",\"A\":\"Alicante\",\"AL\":\"Almer\u00eda\",\"O\":\"Asturias\",\"AV\":\"\u00c1vila\",\"BA\":\"Badajoz\",\"PM\":\"Baleares\",\"B\":\"Barcelona\",\"BU\":\"Burgos\",\"CC\":\"C\u00e1ceres\",\"CA\":\"C\u00e1diz\",\"S\":\"Cantabria\",\"CS\":\"Castell\u00f3n\",\"CE\":\"Ceuta\",\"CR\":\"Ciudad Real\",\"CO\":\"C\\u00f3rdoba\",\"CU\":\"Cuenca\",\"GI\":\"Girona\",\"GR\":\"Granada\",\"GU\":\"Guadalajara\",\"SS\":\"Gipuzkoa\",\"H\":\"Huelva\",\"HU\":\"Huesca\",\"J\":\"Ja\u00e9n\",\"LO\":\"La Rioja\",\"GC\":\"Las Palmas\",\"LE\":\"Le\u00f3n\",\"L\":\"Lleida\",\"LU\":\"Lugo\",\"M\":\"Madrid\",\"MA\":\"M\u00e1laga\",\"ML\":\"Melilla\",\"MU\":\"Murcia\",\"NA\":\"Navarra\",\"OR\":\"Ourense\",\"P\":\"Palencia\",\"PO\":\"Pontevedra\",\"SA\":\"Salamanca\",\"TF\":\"Santa Cruz de Tenerife\",\"SG\":\"Segovia\",\"SE\":\"Sevilla\",\"SO\":\"Soria\",\"T\":\"Tarragona\",\"TE\":\"Teruel\",\"TO\":\"Toledo\",\"V\":\"Valencia\",\"VA\":\"Valladolid\",\"BI\":\"Bizkaia\",\"ZA\":\"Zamora\",\"Z\":\"Zaragoza\"},\"FI\":[],\"FR\":[],\"GH\":{\"AF\":\"Ahafo\",\"AH\":\"Ashanti\",\"BA\":\"Brong-Ahafo\",\"BO\":\"Bono\",\"BE\":\"Bono este\",\"CP\":\"Central\",\"EP\":\"Oriental\",\"AA\":\"Gran Acra\",\"NE\":\"Noreste\",\"NP\":\"Septentrional\",\"OT\":\"Oti\",\"SV\":\"Savannah\",\"UE\":\"Alto este\",\"UW\":\"Alto oriente\",\"TV\":\"Volta\",\"WP\":\"Occidental\",\"WN\":\"Noroeste\"},\"GP\":[],\"GR\":{\"I\":\"\\u00c1tica\",\"A\":\"Macedonia Oriental y Tracia\",\"B\":\"Macedonia Central\",\"C\":\"Macedonia Occidental\",\"D\":\"\\u00c9piro\",\"E\":\"Tesalia\",\"F\":\"Islas J\\u00f3nicas\",\"G\":\"Grecia Occidental\",\"H\":\"Grecia Central\",\"J\":\"Peloponeso\",\"K\":\"Egeo Septentrional\",\"L\":\"Egeo Meridional\",\"M\":\"Creta\"},\"GF\":[],\"HK\":{\"HONG KONG\":\"Isla de Hong Kong\",\"KOWLOON\":\"Kowloon\",\"NEW TERRITORIES\":\"Nuevos territorios\"},\"HU\":{\"BK\":\"B\\u00e1cs-Kiskun\",\"BE\":\"B\\u00e9k\\u00e9s\",\"BA\":\"Baranya\",\"BZ\":\"Borsod-Aba\\u00faj-Zempl\\u00e9n\",\"BU\":\"Budapest\",\"CS\":\"Csongr\\u00e1d\",\"FE\":\"Fej\\u00e9r\",\"GS\":\"Gy\\u0151r-Moson-Sopron\",\"HB\":\"Hajd\\u00fa-Bihar\",\"HE\":\"Heves\",\"JN\":\"J\\u00e1sz-Nagykun-Szolnok\",\"KE\":\"Kom\\u00e1rom-Esztergom\",\"NO\":\"N\\u00f3gr\\u00e1d\",\"PE\":\"Pest\",\"SO\":\"Somogy\",\"SZ\":\"Szabolcs-Szatm\\u00e1r-Bereg\",\"TO\":\"Tolna\",\"VA\":\"Vas\",\"VE\":\"Veszpr\\u00e9m\",\"ZA\":\"Zala\"},\"ID\":{\"AC\":\"Daerah Istimewa Aceh\",\"SU\":\"Sumatra Septentrional\",\"SB\":\"Sumatra Occidental\",\"RI\":\"Riau\",\"KR\":\"Kepulauan Riau\",\"JA\":\"Jambi\",\"SS\":\"Sumatra Meridional\",\"BB\":\"Bangka Belitung\",\"BE\":\"Bengkulu\",\"LA\":\"Lampung\",\"JK\":\"DKI Jakarta\",\"JB\":\"Jawa Barat\",\"BT\":\"Banten\",\"JT\":\"Jawa Tengah\",\"JI\":\"Jawa Timur\",\"YO\":\"Yogyakarta\",\"BA\":\"Bali\",\"NB\":\"Nusatenggara Occidental\",\"NT\":\"Nusatenggara Oriental\",\"KB\":\"Borneo Occidental\",\"KT\":\"Borneo Central\",\"KI\":\"Kalimantan Oriental\",\"KS\":\"Borneo Meridional\",\"KU\":\"Borneo del Norte\",\"SA\":\"C\\u00e9lebes Septentrional\",\"ST\":\"C\\u00e9lebes Central\",\"SG\":\"C\\u00e9lebes Suroriental\",\"SR\":\"C\\u00e9lebes Occidental\",\"SN\":\"C\\u00e9lebes Meridional\",\"GO\":\"Gorontalo\",\"MA\":\"Las islas Molucas \",\"MU\":\"Molucas septentrionales\",\"PA\":\"Pap\\u00faa\",\"PB\":\"Provincia de Pap\\u00faa Occidental\"},\"IE\":{\"CW\":\"Carlow\",\"CN\":\"Cavan\",\"CE\":\"Clare\",\"CO\":\"Cork\",\"DL\":\"Donegal\",\"D\":\"Dubl\\u00edn\",\"G\":\"Galway\",\"KY\":\"Kerry\",\"KE\":\"Kildare\",\"KK\":\"Kilkenny\",\"LS\":\"Laois\",\"LM\":\"Leitrim\",\"LK\":\"Limerick\",\"LD\":\"Longford\",\"LH\":\"Louth\",\"MO\":\"Mayo\",\"MH\":\"Meath\",\"MN\":\"Monaghan\",\"OY\":\"Offaly\",\"RN\":\"Roscommon\",\"SO\":\"Sligo\",\"TA\":\"Tipperary\",\"WD\":\"Waterford\",\"WH\":\"Westmeath\",\"WX\":\"Wexford\",\"WW\":\"Wicklow\"},\"IN\":{\"AP\":\"Andra Pradesh\",\"AR\":\"Arunachal Pradesh\",\"AS\":\"Assam\",\"BR\":\"Bihar\",\"CT\":\"Chhattisgarh\",\"GA\":\"Goa\",\"GJ\":\"Gujarat\",\"HR\":\"Haryana\",\"HP\":\"Himachal Pradesh\",\"JK\":\"Jammu and Kashmir\",\"JH\":\"Jharkhand\",\"KA\":\"Karnataka\",\"KL\":\"Kerala\",\"MP\":\"Madhya Pradesh\",\"MH\":\"Maharashtra\",\"MN\":\"Manipur\",\"ML\":\"Meghalaya\",\"MZ\":\"Mizoram\",\"NL\":\"Nagaland\",\"OR\":\"Orissa\",\"PB\":\"Punjab\",\"RJ\":\"Rajasthan\",\"SK\":\"Sikkim\",\"TN\":\"Tamil Nadu\",\"TS\":\"Telangana\",\"TR\":\"Tripura\",\"UK\":\"Uttarakhand\",\"UP\":\"Uttar Pradesh\",\"WB\":\"West Bengal\",\"AN\":\"Islas Andaman y Nicobar\",\"CH\":\"Chandigarh\",\"DN\":\"Dadra y Nagar Haveli\",\"DD\":\"Daman and Diu\",\"DL\":\"Delhi\",\"LD\":\"Lakshadeep\",\"PY\":\"Pondicherry (Puducherry)\"},\"IR\":{\"KHZ\":\"Juzest\\u00e1n (\\u062e\\u0648\\u0632\\u0633\\u062a\\u0627\\u0646)\",\"THR\":\"Teher\\u00e1n  (\\u062a\\u0647\\u0631\\u0627\\u0646)\",\"ILM\":\"Ilaam (\\u0627\\u06cc\\u0644\\u0627\\u0645)\",\"BHR\":\"Bujara (\\u0628\\u0648\\u0634\\u0647\\u0631)\",\"ADL\":\"Ardebil (\\u0627\\u0631\\u062f\\u0628\\u06cc\\u0644)\",\"ESF\":\"Isfah\\u00e1n (\\u0627\\u0635\\u0641\\u0647\\u0627\\u0646)\",\"YZD\":\"Yazd (\\u06cc\\u0632\\u062f)\",\"KRH\":\"Kermanshah (\\u06a9\\u0631\\u0645\\u0627\\u0646\\u0634\\u0627\\u0647)\",\"KRN\":\"Kerm\\u00e1n (\\u06a9\\u0631\\u0645\\u0627\\u0646)\",\"HDN\":\"Hamad\\u00e1n (\\u0647\\u0645\\u062f\\u0627\\u0646)\",\"GZN\":\"Qazv\\u00edn (\\u0642\\u0632\\u0648\\u06cc\\u0646)\",\"ZJN\":\"Zany\\u00e1n (\\u0632\\u0646\\u062c\\u0627\\u0646)\",\"LRS\":\"Lorist\\u00e1n (\\u0644\\u0631\\u0633\\u062a\\u0627\\u0646)\",\"ABZ\":\"Elburz (\\u0627\\u0644\\u0628\\u0631\\u0632)\",\"EAZ\":\"Azerbaiy\\u00e1n Oriental (\\u0622\\u0630\\u0631\\u0628\\u0627\\u06cc\\u062c\\u0627\\u0646 \\u0634\\u0631\\u0642\\u06cc)\",\"WAZ\":\"Azerbaiy\\u00e1n Occidental (\\u0622\\u0630\\u0631\\u0628\\u0627\\u06cc\\u062c\\u0627\\u0646 \\u063a\\u0631\\u0628\\u06cc)\",\"CHB\":\"Chahar y Bajtiari (\\u0686\\u0647\\u0627\\u0631\\u0645\\u062d\\u0627\\u0644 \\u0648 \\u0628\\u062e\\u062a\\u06cc\\u0627\\u0631\\u06cc)\",\"SKH\":\"Joras\\u00e1n del Sur (\\u062e\\u0631\\u0627\\u0633\\u0627\\u0646 \\u062c\\u0646\\u0648\\u0628\\u06cc)\",\"RKH\":\"Joras\\u00e1n Razav\\u00ed (\\u062e\\u0631\\u0627\\u0633\\u0627\\u0646 \\u0631\\u0636\\u0648\\u06cc)\",\"NKH\":\"Joras\\u00e1n del Norte (\\u062e\\u0631\\u0627\\u0633\\u0627\\u0646 \\u062c\\u0646\\u0648\\u0628\\u06cc)\",\"SMN\":\"Semn\\u00e1n (\\u0633\\u0645\\u0646\\u0627\\u0646)\",\"FRS\":\"Fars (\\u0641\\u0627\\u0631\\u0633)\",\"QHM\":\"Qom (\\u0642\\u0645)\",\"KRD\":\"Kurdist\\u00e1n \\\/ \\u06a9\\u0631\\u062f\\u0633\\u062a\\u0627\\u0646)\",\"KBD\":\"Kohkiluyeh y Buyer Ahmad (\\u06a9\\u0647\\u06af\\u06cc\\u0644\\u0648\\u06cc\\u06cc\\u0647 \\u0648 \\u0628\\u0648\\u06cc\\u0631\\u0627\\u062d\\u0645\\u062f)\",\"GLS\":\"Golest\\u00e1n (\\u06af\\u0644\\u0633\\u062a\\u0627\\u0646)\",\"GIL\":\"Guil\\u00e1n (\\u06af\\u06cc\\u0644\\u0627\\u0646)\",\"MZN\":\"Mazandar\\u00e1n (\\u0645\\u0627\\u0632\\u0646\\u062f\\u0631\\u0627\\u0646)\",\"MKZ\":\"Markaz\\u00ed (\\u0645\\u0631\\u06a9\\u0632\\u06cc)\",\"HRZ\":\"Hormozg\\u00e1n (\\u0647\\u0631\\u0645\\u0632\\u06af\\u0627\\u0646)\",\"SBN\":\"Sist\\u00e1n and Baluchist\\u00e1n (\\u0633\\u06cc\\u0633\\u062a\\u0627\\u0646 \\u0648 \\u0628\\u0644\\u0648\\u0686\\u0633\\u062a\\u0627\\u0646)\"},\"IS\":[],\"IT\":{\"AG\":\"Agrigento\",\"AL\":\"Alessandria\",\"AN\":\"Ancona\",\"AO\":\"Aosta\",\"AR\":\"Arezzo\",\"AP\":\"Ascoli Piceno\",\"AT\":\"Asti\",\"AV\":\"Avellino\",\"BA\":\"Bari\",\"BT\":\"Barletta-Andria-Trani\",\"BL\":\"Belluno\",\"BN\":\"Benevento\",\"BG\":\"Bergamo\",\"BI\":\"Biella\",\"BO\":\"Bologna\",\"BZ\":\"Bolzano\",\"BS\":\"Brescia\",\"BR\":\"Brindisi\",\"CA\":\"Cagliari\",\"CL\":\"Caltanissetta\",\"CB\":\"Campobasso\",\"CE\":\"Caserta\",\"CT\":\"Catania\",\"CZ\":\"Catanzaro\",\"CH\":\"Chieti\",\"CO\":\"Como\",\"CS\":\"Cosenza\",\"CR\":\"Cremona\",\"KR\":\"Crotone\",\"CN\":\"Cuneo\",\"EN\":\"Enna\",\"FM\":\"Fermo\",\"FE\":\"Ferrara\",\"FI\":\"Firenze\",\"FG\":\"Foggia\",\"FC\":\"Forl\\u00ec-Cesena\",\"FR\":\"Frosinone\",\"GE\":\"Genova\",\"GO\":\"Gorizia\",\"GR\":\"Grosseto\",\"IM\":\"Imperia\",\"IS\":\"Isernia\",\"SP\":\"La Spezia\",\"AQ\":\"L'Aquila\",\"LT\":\"Latina\",\"LE\":\"Lecce\",\"LC\":\"Lecco\",\"LI\":\"Livorno\",\"LO\":\"Lodi\",\"LU\":\"Lucca\",\"MC\":\"Macerata\",\"MN\":\"Mantova\",\"MS\":\"Massa-Carrara\",\"MT\":\"Matera\",\"ME\":\"Messina\",\"MI\":\"Milano\",\"MO\":\"Modena\",\"MB\":\"Monza e della Brianza\",\"NA\":\"Napoli\",\"NO\":\"Novara\",\"NU\":\"Nuoro\",\"OR\":\"Oristano\",\"PD\":\"Padova\",\"PA\":\"Palermo\",\"PR\":\"Parma\",\"PV\":\"Pavia\",\"PG\":\"Perugia\",\"PU\":\"Pesaro e Urbino\",\"PE\":\"Pescara\",\"PC\":\"Piacenza\",\"PI\":\"Pisa\",\"PT\":\"Pistoia\",\"PN\":\"Pordenone\",\"PZ\":\"Potenza\",\"PO\":\"Prato\",\"RG\":\"Ragusa\",\"RA\":\"Ravenna\",\"RC\":\"Reggio Calabria\",\"RE\":\"Reggio Emilia\",\"RI\":\"Rieti\",\"RN\":\"Rimini\",\"RM\":\"Roma\",\"RO\":\"Rovigo\",\"SA\":\"Salerno\",\"SS\":\"Sassari\",\"SV\":\"Savona\",\"SI\":\"Siena\",\"SR\":\"Siracusa\",\"SO\":\"Sondrio\",\"SU\":\"Sur de Cerde\\u00f1a\",\"TA\":\"Taranto\",\"TE\":\"Teramo\",\"TR\":\"Terni\",\"TO\":\"Torino\",\"TP\":\"Trapani\",\"TN\":\"Trento\",\"TV\":\"Treviso\",\"TS\":\"Trieste\",\"UD\":\"Udine\",\"VA\":\"Varese\",\"VE\":\"Venezia\",\"VB\":\"Verbano-Cusio-Ossola\",\"VC\":\"Vercelli\",\"VR\":\"Verona\",\"VV\":\"Vibo Valentia\",\"VI\":\"Vicenza\",\"VT\":\"Viterbo\"},\"IL\":[],\"IM\":[],\"JP\":{\"JP01\":\"Hokkaid\\u014d\",\"JP02\":\"Aomori\",\"JP03\":\"Iwate\",\"JP04\":\"Miyagi\",\"JP05\":\"Akita\",\"JP06\":\"Yamagata\",\"JP07\":\"Fukushima\",\"JP08\":\"Ibaraki\",\"JP09\":\"Tochigi\",\"JP10\":\"Gunma\",\"JP11\":\"Saitama\",\"JP12\":\"Chiba\",\"JP13\":\"Tokyo\",\"JP14\":\"Kanagawa\",\"JP15\":\"Niigata\",\"JP16\":\"Toyama\",\"JP17\":\"Ishikawa\",\"JP18\":\"Fukui\",\"JP19\":\"Yamanashi\",\"JP20\":\"Nagano\",\"JP21\":\"Gifu\",\"JP22\":\"Shizuoka\",\"JP23\":\"Aichi\",\"JP24\":\"Mie\",\"JP25\":\"Shiga\",\"JP26\":\"Kyoto\",\"JP27\":\"Osaka\",\"JP28\":\"Hyogo\",\"JP29\":\"Nara\",\"JP30\":\"Wakayama\",\"JP31\":\"Tottori\",\"JP32\":\"Shimane\",\"JP33\":\"Okayama\",\"JP34\":\"Hiroshima\",\"JP35\":\"Yamaguchi\",\"JP36\":\"Tokushima\",\"JP37\":\"Kagawa\",\"JP38\":\"Ehime\",\"JP39\":\"Coch\\u00edn\",\"JP40\":\"Fukuoka\",\"JP41\":\"Saga\",\"JP42\":\"Nagasaki\",\"JP43\":\"Kumamoto\",\"JP44\":\"\\u014cita\",\"JP45\":\"Miyazaki\",\"JP46\":\"Kagoshima\",\"JP47\":\"Okinawa\"},\"KE\":{\"KE01\":\"Baringo\",\"KE02\":\"Bomet\",\"KE03\":\"Bungoma\",\"KE04\":\"Busia\",\"KE05\":\"Elgeyo-Marakwet\",\"KE06\":\"Embu\",\"KE07\":\"Garissa\",\"KE08\":\"Homa Bay\",\"KE09\":\"Isiolo\",\"KE10\":\"Kajiado\",\"KE11\":\"Kakamega\",\"KE12\":\"Kericho\",\"KE13\":\"Kiambu\",\"KE14\":\"Kilifi\",\"KE15\":\"Kirinyaga\",\"KE16\":\"Kisii\",\"KE17\":\"Kisumu\",\"KE18\":\"Kitui\",\"KE19\":\"Kwale\",\"KE20\":\"Laikipia\",\"KE21\":\"Lamu\",\"KE22\":\"Machakos\",\"KE23\":\"Makueni\",\"KE24\":\"Mandera\",\"KE25\":\"Marsabit\",\"KE26\":\"Meru\",\"KE27\":\"Migori\",\"KE28\":\"Mombasa\",\"KE29\":\"Murang\\u2019a\",\"KE30\":\"Condado de Nairobi \",\"KE31\":\"Nakuru\",\"KE32\":\"Nandi\",\"KE33\":\"Narok\",\"KE34\":\"Nyamira\",\"KE35\":\"Nyandarua\",\"KE36\":\"Nyeri\",\"KE37\":\"Samburu\",\"KE38\":\"Siaya\",\"KE39\":\"Taita-Taveta\",\"KE40\":\"Tana River\",\"KE41\":\"Tharaka-Nithi\",\"KE42\":\"Trans Nzoia\",\"KE43\":\"Turkana\",\"KE44\":\"Uasin Gishu\",\"KE45\":\"Vihiga\",\"KE46\":\"Wajir\",\"KE47\":\"West Pokot\"},\"KR\":[],\"KW\":[],\"LA\":{\"AT\":\"Attapeu\",\"BK\":\"Bokeo\",\"BL\":\"Bolikhamsai\",\"CH\":\"Champasak\",\"HO\":\"Houaphanh\",\"KH\":\"Khammouane\",\"LM\":\"Luang Namtha\",\"LP\":\"Luang Prabang\",\"OU\":\"Oudomxay\",\"PH\":\"Phongsaly\",\"SL\":\"Salavan\",\"SV\":\"Savannakhet\",\"VI\":\"Provincia de Vientiane\",\"VT\":\"Vientiane\",\"XA\":\"Sainyabuli\",\"XE\":\"Sekong\",\"XI\":\"Xiangkhouang\",\"XS\":\"Xaisomboun\"},\"LB\":[],\"LR\":{\"BM\":\"Bomi\",\"BN\":\"Bong\",\"GA\":\"Gbarpolu\",\"GB\":\"Grand Bassa\",\"GC\":\"Grand Cape Mount\",\"GG\":\"Grand Gedeh\",\"GK\":\"Grand Kru\",\"LO\":\"Lofa\",\"MA\":\"Margibi\",\"MY\":\"Maryland\",\"MO\":\"Montserrado\",\"NM\":\"Nimba\",\"RV\":\"Rivercess\",\"RG\":\"River Gee\",\"SN\":\"Sinoe\"},\"LU\":[],\"MD\":{\"C\":\"Chi\u0219in\u0103u\",\"BL\":\"B\u0103l\u021bi\",\"AN\":\"Anenii Noi\",\"BS\":\"Basarabeasca\",\"BR\":\"Briceni\",\"CH\":\"Cahul\",\"CT\":\"Cantemir\",\"CL\":\"C\u0103l\u0103ra\u0219i\",\"CS\":\"C\u0103u\u0219eni\",\"CM\":\"Cimi\u0219lia\",\"CR\":\"Criuleni\",\"DN\":\"Dondu\u0219eni\",\"DR\":\"Drochia\",\"DB\":\"Dub\u0103sari\",\"ED\":\"Edine\u021b\",\"FL\":\"F\u0103le\u0219ti\",\"FR\":\"Flore\u0219ti\",\"GE\":\"UTA G\u0103g\u0103uzia\",\"GL\":\"Glodeni\",\"HN\":\"H\u00eence\u0219ti\",\"IL\":\"Ialoveni\",\"LV\":\"Leova\",\"NS\":\"Nisporeni\",\"OC\":\"Ocni\u021ba\",\"OR\":\"Orhei\",\"RZ\":\"Rezina\",\"RS\":\"R\u00ee\u0219cani\",\"SG\":\"S\u00eengerei\",\"SR\":\"Soroca\",\"ST\":\"Str\u0103\u0219eni\",\"SD\":\"\u0218old\u0103ne\u0219ti\",\"SV\":\"\u0218tefan Vod\u0103\",\"TR\":\"Taraclia\",\"TL\":\"Telene\u0219ti\",\"UN\":\"Ungheni\"},\"MQ\":[],\"MT\":[],\"MX\":{\"DF\":\"Ciudad de M\u00e9xico\",\"JA\":\"Jalisco\",\"NL\":\"Nuevo Le\u00f3n\",\"AG\":\"Aguascalientes\",\"BC\":\"Baja California\",\"BS\":\"Baja California Sur\",\"CM\":\"Campeche\",\"CS\":\"Chiapas\",\"CH\":\"Chihuahua\",\"CO\":\"Coahuila\",\"CL\":\"Colima\",\"DG\":\"Durango\",\"GT\":\"Guanajuato\",\"GR\":\"Guerrero\",\"HG\":\"Hidalgo\",\"MX\":\"Estado de M\u00e9xico\",\"MI\":\"Michoac\u00e1n\",\"MO\":\"Morelos\",\"NA\":\"Nayarit\",\"OA\":\"Oaxaca\",\"PU\":\"Puebla\",\"QT\":\"Quer\u00e9taro\",\"QR\":\"Quintana Roo\",\"SL\":\"San Luis Potos\u00ed\",\"SI\":\"Sinaloa\",\"SO\":\"Sonora\",\"TB\":\"Tabasco\",\"TM\":\"Tamaulipas\",\"TL\":\"Tlaxcala\",\"VE\":\"Veracruz\",\"YU\":\"Yucat\u00e1n\",\"ZA\":\"Zacatecas\"},\"MY\":{\"JHR\":\"Johor\",\"KDH\":\"Kedah\",\"KTN\":\"Kelantan\",\"LBN\":\"Labuan\",\"MLK\":\"Malaca (Melaca)\",\"NSN\":\"Negeri Sembilan\",\"PHG\":\"Pahang\",\"PNG\":\"Penang (Pulau Pinang)\",\"PRK\":\"Perak\",\"PLS\":\"Perlis\",\"SBH\":\"Sabah\",\"SWK\":\"Sarawak\",\"SGR\":\"Selangor\",\"TRG\":\"Terengganu\",\"PJY\":\"Putrajaya\",\"KUL\":\"Kuala Lumpur\"},\"MZ\":{\"MZP\":\"Cabo Delgado\",\"MZG\":\"Gaza\",\"MZI\":\"Inhambane\",\"MZB\":\"Manica\",\"MZL\":\"Provincia de Maputo\",\"MZMPM\":\"Maputo\",\"MZN\":\"Nampula\",\"MZA\":\"Niassa\",\"MZS\":\"Sofala\",\"MZT\":\"Tete\",\"MZQ\":\"Zamb\\u00e9zia\"},\"NG\":{\"AB\":\"Abia\",\"FC\":\"Abuja\",\"AD\":\"Adamawa\",\"AK\":\"Akwa Ibom\",\"AN\":\"Anambra\",\"BA\":\"Bauchi\",\"BY\":\"Bayelsa\",\"BE\":\"Benue\",\"BO\":\"Borno\",\"CR\":\"Cross River\",\"DE\":\"Delta\",\"EB\":\"Ebonyi\",\"ED\":\"Edo\",\"EK\":\"Ekiti\",\"EN\":\"Enugu\",\"GO\":\"Gombe\",\"IM\":\"Imo\",\"JI\":\"Jigawa\",\"KD\":\"Kaduna\",\"KN\":\"Kano\",\"KT\":\"Katsina\",\"KE\":\"Kebbi\",\"KO\":\"Kogi\",\"KW\":\"Kwara\",\"LA\":\"Lagos\",\"NA\":\"Nasarawa\",\"NI\":\"N\\u00edger\",\"OG\":\"Ogun\",\"ON\":\"Ondo\",\"OS\":\"Osun\",\"OY\":\"Oyo\",\"PL\":\"Plateau\",\"RI\":\"Rivers\",\"SO\":\"Sokoto\",\"TA\":\"Taraba\",\"YO\":\"Yobe\",\"ZA\":\"Zamfara\"},\"NL\":[],\"NO\":[],\"NP\":{\"BAG\":\"Bagmati\",\"BHE\":\"Bheri\",\"DHA\":\"Dhaulagiri\",\"GAN\":\"Gandaki\",\"JAN\":\"Janakpur\",\"KAR\":\"Karnali\",\"KOS\":\"Koshi\",\"LUM\":\"Lumbini\",\"MAH\":\"Mahakali\",\"MEC\":\"Mechi\",\"NAR\":\"Narayani\",\"RAP\":\"Rapti\",\"SAG\":\"Sagarmatha\",\"SET\":\"Seti\"},\"NZ\":{\"NL\":\"Northland\",\"AK\":\"Auckland\",\"WA\":\"Waikato\",\"BP\":\"Bay of Plenty\",\"TK\":\"Taranaki\",\"GI\":\"Gisborne\",\"HB\":\"Bah\\u00eda de Hawke\",\"MW\":\"Manawatu-Wanganui\",\"WE\":\"Wellington\",\"NS\":\"Nelson\",\"MB\":\"Marlborough\",\"TM\":\"Tasman\",\"WC\":\"Costa Oeste\",\"CT\":\"Canterbury\",\"OT\":\"Otago\",\"SL\":\"Southland\"},\"PE\":{\"CAL\":\"El Callao\",\"LMA\":\"Municipalidad Metropolitana de Lima\",\"AMA\":\"Amazonas\",\"ANC\":\"Ancash\",\"APU\":\"Apur\u00edmac\",\"ARE\":\"Arequipa\",\"AYA\":\"Ayacucho\",\"CAJ\":\"Cajamarca\",\"CUS\":\"Cusco\",\"HUV\":\"Huancavelica\",\"HUC\":\"Hu\u00e1nuco\",\"ICA\":\"Ica\",\"JUN\":\"Jun\u00edn\",\"LAL\":\"La Libertad\",\"LAM\":\"Lambayeque\",\"LIM\":\"Lima\",\"LOR\":\"Loreto\",\"MDD\":\"Madre de Dios\",\"MOQ\":\"Moquegua\",\"PAS\":\"Pasco\",\"PIU\":\"Piura\",\"PUN\":\"Puno\",\"SAM\":\"San Mart\u00edn\",\"TAC\":\"Tacna\",\"TUM\":\"Tumbes\",\"UCA\":\"Ucayali\"},\"PH\":{\"ABR\":\"Abra\",\"AGN\":\"Agusan del Norte\",\"AGS\":\"Agusan del Sur\",\"AKL\":\"Aklan\",\"ALB\":\"Albay\",\"ANT\":\"Antique\",\"APA\":\"Apayao\",\"AUR\":\"Aurora\",\"BAS\":\"Basilan\",\"BAN\":\"Bataan\",\"BTN\":\"Batanes\",\"BTG\":\"Batangas\",\"BEN\":\"Benguet\",\"BIL\":\"Biliran\",\"BOH\":\"Bohol\",\"BUK\":\"Bukidnon\",\"BUL\":\"Bulacan\",\"CAG\":\"Cagayan\",\"CAN\":\"Camarines Norte\",\"CAS\":\"Camarines Sur\",\"CAM\":\"Camiguin\",\"CAP\":\"Capiz\",\"CAT\":\"Catanduanes\",\"CAV\":\"Cavite\",\"CEB\":\"Cebu\",\"COM\":\"Valle Compostela\",\"NCO\":\"Cotabato\",\"DAV\":\"Davao del Norte\",\"DAS\":\"Davao del Sur\",\"DAC\":\"Davao Occidental\",\"DAO\":\"Davao Oriental\",\"DIN\":\"Islas Dinagat\",\"EAS\":\"Samar Este\",\"GUI\":\"Guimaras\",\"IFU\":\"Ifugao\",\"ILN\":\"Ilocos Norte\",\"ILS\":\"Ilocos Sur\",\"ILI\":\"Iloilo\",\"ISA\":\"Isabela\",\"KAL\":\"Kalinga\",\"LUN\":\"La Union\",\"LAG\":\"Laguna\",\"LAN\":\"Lanao del Norte\",\"LAS\":\"Lanao del Sur\",\"LEY\":\"Leyte\",\"MAG\":\"Maguindanao\",\"MAD\":\"Marinduque\",\"MAS\":\"Masbate\",\"MSC\":\"Misamis Occidental\",\"MSR\":\"Misamis Oriental\",\"MOU\":\"Mountain Province\",\"NEC\":\"Negros Occidental\",\"NER\":\"Negros Oriental\",\"NSA\":\"Samar del Norte\",\"NUE\":\"Nueva Ecija\",\"NUV\":\"Nueva Vizcaya\",\"MDC\":\"Mindoro Occidental\",\"MDR\":\"Mindoro Oriental\",\"PLW\":\"Palawan\",\"PAM\":\"Pampanga\",\"PAN\":\"Pangasinan\",\"QUE\":\"Quezon\",\"QUI\":\"Quirino\",\"RIZ\":\"Rizal\",\"ROM\":\"Romblon\",\"WSA\":\"Samar\",\"SAR\":\"Sarangani\",\"SIQ\":\"Siquijor\",\"SOR\":\"Sorsogon\",\"SCO\":\"Cotabato Sur\",\"SLE\":\"Leyte del Sur\",\"SUK\":\"Sultan Kudarat\",\"SLU\":\"Sulu\",\"SUN\":\"Surigao del Norte\",\"SUR\":\"Surigao del Sur\",\"TAR\":\"Tarlac\",\"TAW\":\"Tawi-Tawi\",\"ZMB\":\"Zambales\",\"ZAN\":\"Zamboanga del Norte\",\"ZAS\":\"Zamboanga del Sur\",\"ZSI\":\"Zamboanga Sibugay\",\"00\":\"Metro Manila\"},\"PK\":{\"JK\":\"Azad Cachemira\",\"BA\":\"Baluchist\\u00e1n\",\"TA\":\"FATA\",\"GB\":\"Gilgit-Baltist\\u00e1n \",\"IS\":\"Territorio de la capital Islamabad\",\"KP\":\"Khyber Pakhtunkhwa\",\"PB\":\"Punjab\",\"SD\":\"Sindh\"},\"PL\":[],\"PT\":[],\"PY\":{\"PY-ASU\":\"Asunci\u00f3n\",\"PY-1\":\"Concepci\u00f3n\",\"PY-2\":\"San Pedro\",\"PY-3\":\"Cordillera\",\"PY-4\":\"Guair\u00e1\",\"PY-5\":\"Caaguaz\u00fa\",\"PY-6\":\"Caazap\u00e1\",\"PY-7\":\"Itap\u00faa\",\"PY-8\":\"Misiones\",\"PY-9\":\"Paraguar\u00ed\",\"PY-10\":\"Alto Paran\u00e1\",\"PY-11\":\"Central\",\"PY-12\":\"\u00d1eembuc\u00fa\",\"PY-13\":\"Amambay\",\"PY-14\":\"Canindey\u00fa\",\"PY-15\":\"Presidente Hayes\",\"PY-16\":\"Alto Paraguay\",\"PY-17\":\"Boquer\u00f3n\"},\"RE\":[],\"RO\":{\"AB\":\"Alba\",\"AR\":\"Arad\",\"AG\":\"Arge\u0219\",\"BC\":\"Bac\u0103u\",\"BH\":\"Bihor\",\"BN\":\"Bistri\u021ba-N\u0103s\u0103ud\",\"BT\":\"Boto\u0219ani\",\"BR\":\"Br\u0103ila\",\"BV\":\"Bra\u0219ov\",\"B\":\"Bucure\u0219ti\",\"BZ\":\"Buz\u0103u\",\"CL\":\"C\u0103l\u0103ra\u0219i\",\"CS\":\"Cara\u0219-Severin\",\"CJ\":\"Cluj\",\"CT\":\"Constan\u021ba\",\"CV\":\"Covasna\",\"DB\":\"D\u00e2mbovi\u021ba\",\"DJ\":\"Dolj\",\"GL\":\"Gala\u021bi\",\"GR\":\"Giurgiu\",\"GJ\":\"Gorj\",\"HR\":\"Harghita\",\"HD\":\"Hunedoara\",\"IL\":\"Ialomi\u021ba\",\"IS\":\"Ia\u0219i\",\"IF\":\"Ilfov\",\"MM\":\"Maramure\u0219\",\"MH\":\"Mehedin\u021bi\",\"MS\":\"Mure\u0219\",\"NT\":\"Neam\u021b\",\"OT\":\"Olt\",\"PH\":\"Prahova\",\"SJ\":\"S\u0103laj\",\"SM\":\"Satu Mare\",\"SB\":\"Sibiu\",\"SV\":\"Suceava\",\"TR\":\"Teleorman\",\"TM\":\"Timi\u0219\",\"TL\":\"Tulcea\",\"VL\":\"V\u00e2lcea\",\"VS\":\"Vaslui\",\"VN\":\"Vrancea\"},\"RS\":[],\"SG\":[],\"SK\":[],\"SI\":[],\"TH\":{\"TH-37\":\"Amnat Charoen\",\"TH-15\":\"Ang Thong\",\"TH-14\":\"Ayutthaya\",\"TH-10\":\"Bangkok\",\"TH-38\":\"Bueng Kan\",\"TH-31\":\"Buri Ram\",\"TH-24\":\"Chachoengsao\",\"TH-18\":\"Chai Nat\",\"TH-36\":\"Chaiyaphum\",\"TH-22\":\"Chanthaburi\",\"TH-50\":\"Chiang Mai\",\"TH-57\":\"Chiang Rai\",\"TH-20\":\"Chonburi\",\"TH-86\":\"Chumphon\",\"TH-46\":\"Kalasin\",\"TH-62\":\"Kamphaeng Phet\",\"TH-71\":\"Kanchanaburi\",\"TH-40\":\"Khon Kaen\",\"TH-81\":\"Krabi\",\"TH-52\":\"Lampang\",\"TH-51\":\"Lamphun\",\"TH-42\":\"Loei\",\"TH-16\":\"Lopburi\",\"TH-58\":\"Mae Hong Son\",\"TH-44\":\"Maha Sarakham\",\"TH-49\":\"Mukdahan\",\"TH-26\":\"Nakhon Nayok\",\"TH-73\":\"Nakhon Pathom\",\"TH-48\":\"Nakhon Phanom\",\"TH-30\":\"Nakhon Ratchasima\",\"TH-60\":\"Nakhon Sawan\",\"TH-80\":\"Nakhon Si Thammarat\",\"TH-55\":\"Nan\",\"TH-96\":\"Narathiwat\",\"TH-39\":\"Nong Bua Lam Phu\",\"TH-43\":\"Nong Khai\",\"TH-12\":\"Nonthaburi\",\"TH-13\":\"Pathum Thani\",\"TH-94\":\"Pattani\",\"TH-82\":\"Phang Nga\",\"TH-93\":\"Phatthalung\",\"TH-56\":\"Phayao\",\"TH-67\":\"Phetchabun\",\"TH-76\":\"Phetchaburi\",\"TH-66\":\"Phichit\",\"TH-65\":\"Phitsanulok\",\"TH-54\":\"Phrae\",\"TH-83\":\"Phuket\",\"TH-25\":\"Prachin Buri\",\"TH-77\":\"Prachuap Khiri Khan\",\"TH-85\":\"Ranong\",\"TH-70\":\"Ratchaburi\",\"TH-21\":\"Rayong\",\"TH-45\":\"Roi Et\",\"TH-27\":\"Sa Kaeo\",\"TH-47\":\"Sakon Nakhon\",\"TH-11\":\"Samut Prakan\",\"TH-74\":\"Samut Sakhon\",\"TH-75\":\"Samut Songkhram\",\"TH-19\":\"Saraburi\",\"TH-91\":\"Satun\",\"TH-17\":\"Sing Buri\",\"TH-33\":\"Sisaket\",\"TH-90\":\"Songkhla\",\"TH-64\":\"Sukhothai\",\"TH-72\":\"Suphan Buri\",\"TH-84\":\"Surat Thani\",\"TH-32\":\"Surin\",\"TH-63\":\"Tak\",\"TH-92\":\"Trang\",\"TH-23\":\"Trat\",\"TH-34\":\"Ubon Ratchathani\",\"TH-41\":\"Udon Thani\",\"TH-61\":\"Uthai Thani\",\"TH-53\":\"Uttaradit\",\"TH-95\":\"Yala\",\"TH-35\":\"Yasothon\"},\"TR\":{\"TR01\":\"Adana\",\"TR02\":\"Ad\u0131yaman\",\"TR03\":\"Afyon\",\"TR04\":\"A\u011fr\u0131\",\"TR05\":\"Amasya\",\"TR06\":\"Ankara\",\"TR07\":\"Antalya\",\"TR08\":\"Artvin\",\"TR09\":\"Ayd\u0131n\",\"TR10\":\"Bal\u0131kesir\",\"TR11\":\"Bilecik\",\"TR12\":\"Bing\u00f6l\",\"TR13\":\"Bitlis\",\"TR14\":\"Bolu\",\"TR15\":\"Burdur\",\"TR16\":\"Bursa\",\"TR17\":\"\u00c7anakkale\",\"TR18\":\"\u00c7ank\u0131r\u0131\",\"TR19\":\"\u00c7orum\",\"TR20\":\"Denizli\",\"TR21\":\"Diyarbak\u0131r\",\"TR22\":\"Edirne\",\"TR23\":\"Elaz\u0131\u011f\",\"TR24\":\"Erzincan\",\"TR25\":\"Erzurum\",\"TR26\":\"Eski\u015fehir\",\"TR27\":\"Gaziantep\",\"TR28\":\"Giresun\",\"TR29\":\"G\u00fcm\u00fc\u015fhane\",\"TR30\":\"Hakkari\",\"TR31\":\"Hatay\",\"TR32\":\"Isparta\",\"TR33\":\"\u0130\u00e7el\",\"TR34\":\"\u0130stanbul\",\"TR35\":\"\u0130zmir\",\"TR36\":\"Kars\",\"TR37\":\"Kastamonu\",\"TR38\":\"Kayseri\",\"TR39\":\"K\u0131rklareli\",\"TR40\":\"K\u0131r\u015fehir\",\"TR41\":\"Kocaeli\",\"TR42\":\"Konya\",\"TR43\":\"K\u00fctahya\",\"TR44\":\"Malatya\",\"TR45\":\"Manisa\",\"TR46\":\"Kahramanmara\u015f\",\"TR47\":\"Mardin\",\"TR48\":\"Mu\u011fla\",\"TR49\":\"Mu\u015f\",\"TR50\":\"Nev\u015fehir\",\"TR51\":\"Ni\u011fde\",\"TR52\":\"Ordu\",\"TR53\":\"Rize\",\"TR54\":\"Sakarya\",\"TR55\":\"Samsun\",\"TR56\":\"Siirt\",\"TR57\":\"Sinop\",\"TR58\":\"Sivas\",\"TR59\":\"Tekirda\u011f\",\"TR60\":\"Tokat\",\"TR61\":\"Trabzon\",\"TR62\":\"Tunceli\",\"TR63\":\"\u015eanl\u0131urfa\",\"TR64\":\"U\u015fak\",\"TR65\":\"Van\",\"TR66\":\"Yozgat\",\"TR67\":\"Zonguldak\",\"TR68\":\"Aksaray\",\"TR69\":\"Bayburt\",\"TR70\":\"Karaman\",\"TR71\":\"K\u0131r\u0131kkale\",\"TR72\":\"Batman\",\"TR73\":\"\u015e\u0131rnak\",\"TR74\":\"Bart\u0131n\",\"TR75\":\"Ardahan\",\"TR76\":\"I\u011fd\u0131r\",\"TR77\":\"Yalova\",\"TR78\":\"Karab\u00fck\",\"TR79\":\"Kilis\",\"TR80\":\"Osmaniye\",\"TR81\":\"D\u00fczce\"},\"TZ\":{\"TZ01\":\"Arusha\",\"TZ02\":\"Dar es Salaam\",\"TZ03\":\"Dodoma\",\"TZ04\":\"Iringa\",\"TZ05\":\"Kagera\",\"TZ06\":\"Pemba Norte\",\"TZ07\":\"Zanzibar Norte\",\"TZ08\":\"Kigoma\",\"TZ09\":\"Kilimanjaro\",\"TZ10\":\"Pemba Sur\",\"TZ11\":\"Zanzibar Sur\",\"TZ12\":\"Lindi\",\"TZ13\":\"Mara\",\"TZ14\":\"Mbeya\",\"TZ15\":\"Zanzibar Oeste\",\"TZ16\":\"Morogoro\",\"TZ17\":\"Mtwara\",\"TZ18\":\"Mwanza\",\"TZ19\":\"Coast\",\"TZ20\":\"Rukwa\",\"TZ21\":\"Ruvuma\",\"TZ22\":\"Shinyanga\",\"TZ23\":\"Singida\",\"TZ24\":\"Tabora\",\"TZ25\":\"Tanga\",\"TZ26\":\"Manyara\",\"TZ27\":\"Geita\",\"TZ28\":\"Katavi\",\"TZ29\":\"Njombe\",\"TZ30\":\"Simiyu\"},\"LK\":[],\"SE\":[],\"UG\":{\"UG314\":\"Abim\",\"UG301\":\"Adjumani\",\"UG322\":\"Agago\",\"UG323\":\"Alebtong\",\"UG315\":\"Amolatar\",\"UG324\":\"Amudat\",\"UG216\":\"Amuria\",\"UG316\":\"Amuru\",\"UG302\":\"Apac\",\"UG303\":\"Arua\",\"UG217\":\"Budaka\",\"UG218\":\"Bududa\",\"UG201\":\"Bugiri\",\"UG235\":\"Bugweri\",\"UG420\":\"Buhweju\",\"UG117\":\"Buikwe\",\"UG219\":\"Bukedea\",\"UG118\":\"Bukomansimbi\",\"UG220\":\"Bukwa\",\"UG225\":\"Bulambuli\",\"UG416\":\"Buliisa\",\"UG401\":\"Bundibugyo\",\"UG430\":\"Bunyangabu\",\"UG402\":\"Bushenyi\",\"UG202\":\"Busia\",\"UG221\":\"Butaleja\",\"UG119\":\"Butambala\",\"UG233\":\"Butebo\",\"UG120\":\"Buvuma\",\"UG226\":\"Buyende\",\"UG317\":\"Dokolo\",\"UG121\":\"Gomba\",\"UG304\":\"Gulu\",\"UG403\":\"Hoima\",\"UG417\":\"Ibanda\",\"UG203\":\"Iganga\",\"UG418\":\"Isingiro\",\"UG204\":\"Jinja\",\"UG318\":\"Kaabong\",\"UG404\":\"Kabale\",\"UG405\":\"Kabarole\",\"UG213\":\"Kaberamaido\",\"UG427\":\"Kagadi\",\"UG428\":\"Kakumiro\",\"UG101\":\"Kalangala\",\"UG222\":\"Kaliro\",\"UG122\":\"Kalungu\",\"UG102\":\"Kampala\",\"UG205\":\"Kamuli\",\"UG413\":\"Kamwenge\",\"UG414\":\"Kanungu\",\"UG206\":\"Kapchorwa\",\"UG236\":\"Kapelebyong\",\"UG126\":\"Kasanda\",\"UG406\":\"Kasese\",\"UG207\":\"Katakwi\",\"UG112\":\"Kayunga\",\"UG407\":\"Kibaale\",\"UG103\":\"Kiboga\",\"UG227\":\"Kibuku\",\"UG432\":\"Kikuube\",\"UG419\":\"Kiruhura\",\"UG421\":\"Kiryandongo\",\"UG408\":\"Kisoro\",\"UG305\":\"Kitgum\",\"UG319\":\"Koboko\",\"UG325\":\"Kole\",\"UG306\":\"Kotido\",\"UG208\":\"Kumi\",\"UG333\":\"Kwania\",\"UG228\":\"Kween\",\"UG123\":\"Kyankwanzi\",\"UG422\":\"Kyegegwa\",\"UG415\":\"Kyenjojo\",\"UG125\":\"Kyotera\",\"UG326\":\"Lamwo\",\"UG307\":\"Lira\",\"UG229\":\"Luuka\",\"UG104\":\"Luwero\",\"UG124\":\"Lwengo\",\"UG114\":\"Lyantonde\",\"UG223\":\"Manafwa\",\"UG320\":\"Maracha\",\"UG105\":\"Masaka\",\"UG409\":\"Masindi\",\"UG214\":\"Mayuge\",\"UG209\":\"Mbale\",\"UG410\":\"Mbarara\",\"UG423\":\"Mitooma\",\"UG115\":\"Mityana\",\"UG308\":\"Moroto\",\"UG309\":\"Moyo\",\"UG106\":\"Mpigi\",\"UG107\":\"Mubende\",\"UG108\":\"Mukono\",\"UG334\":\"Nabilatuk\",\"UG311\":\"Nakapiripirit\",\"UG116\":\"Nakaseke\",\"UG109\":\"Nakasongola\",\"UG230\":\"Namayingo\",\"UG234\":\"Namisindwa\",\"UG224\":\"Namutumba\",\"UG327\":\"Napak\",\"UG310\":\"Nebbi\",\"UG231\":\"Ngora\",\"UG424\":\"Ntoroko\",\"UG411\":\"Ntungamo\",\"UG328\":\"Nwoya\",\"UG331\":\"Omoro\",\"UG329\":\"Otuke\",\"UG321\":\"Oyam\",\"UG312\":\"Pader\",\"UG332\":\"Pakwach\",\"UG210\":\"Pallisa\",\"UG110\":\"Rakai\",\"UG429\":\"Rubanda\",\"UG425\":\"Rubirizi\",\"UG431\":\"Rukiga\",\"UG412\":\"Rukungiri\",\"UG111\":\"Sembabule\",\"UG232\":\"Serere\",\"UG426\":\"Sheema\",\"UG215\":\"Sironko\",\"UG211\":\"Soroti\",\"UG212\":\"Tororo\",\"UG113\":\"Wakiso\",\"UG313\":\"Yumbe\",\"UG330\":\"Zombo\"},\"UM\":{\"81\":\"Isla Baker\",\"84\":\"Isla Howland\",\"86\":\"Isla Jarvis\",\"67\":\"Atol\\u00f3n Johnston\",\"89\":\"Arrecife Kingman\",\"71\":\"Atol\\u00f3n de Midway\",\"76\":\"Isla de Navaza\",\"95\":\"Atol\\u00f3n Palmyra\",\"79\":\"Isla Wake\"},\"US\":{\"AL\":\"Alabama\",\"AK\":\"Alaska\",\"AZ\":\"Arizona\",\"AR\":\"Arkansas\",\"CA\":\"California\",\"CO\":\"Colorado\",\"CT\":\"Connecticut\",\"DE\":\"Delaware\",\"DC\":\"District Of Columbia\",\"FL\":\"Florida\",\"GA\":\"Georgia\",\"HI\":\"Hawaii\",\"ID\":\"Idaho\",\"IL\":\"Illinois\",\"IN\":\"Indiana\",\"IA\":\"Iowa\",\"KS\":\"Kansas\",\"KY\":\"Kentucky\",\"LA\":\"Louisiana\",\"ME\":\"Maine\",\"MD\":\"Maryland\",\"MA\":\"Massachusetts\",\"MI\":\"Michigan\",\"MN\":\"Minnesota\",\"MS\":\"Mississippi\",\"MO\":\"Missouri\",\"MT\":\"Montana\",\"NE\":\"Nebraska\",\"NV\":\"Nevada\",\"NH\":\"New Hampshire\",\"NJ\":\"New Jersey\",\"NM\":\"New Mexico\",\"NY\":\"New York\",\"NC\":\"North Carolina\",\"ND\":\"North Dakota\",\"OH\":\"Ohio\",\"OK\":\"Oklahoma\",\"OR\":\"Oregon\",\"PA\":\"Pennsylvania\",\"RI\":\"Rhode Island\",\"SC\":\"South Carolina\",\"SD\":\"South Dakota\",\"TN\":\"Tennessee\",\"TX\":\"Texas\",\"UT\":\"Utah\",\"VT\":\"Vermont\",\"VA\":\"Virginia\",\"WA\":\"Washington\",\"WV\":\"West Virginia\",\"WI\":\"Wisconsin\",\"WY\":\"Wyoming\",\"AA\":\"Fuerzas Armadas (AA)\",\"AE\":\"Fuerzas Armadas  US\",\"AP\":\"Fuerzas Armadas  US\"},\"VN\":[],\"YT\":[],\"ZA\":{\"EC\":\"Cabo del Este\",\"FS\":\"Estado Libre\",\"GP\":\"Gauteng\",\"KZN\":\"KwaZulu-Natal\",\"LP\":\"Limpopo\",\"MP\":\"Mpumalanga\",\"NC\":\"Provincia Septentrional del Cabo\",\"NW\":\"Noroeste\",\"WC\":\"Provincia Occidental del Cabo\"},\"ZM\":{\"ZM-01\":\"Occidental\",\"ZM-02\":\"Central\",\"ZM-03\":\"Oriental\",\"ZM-04\":\"Luapula\",\"ZM-05\":\"Septentrional\",\"ZM-06\":\"Noroccidental\",\"ZM-07\":\"Meridional\",\"ZM-08\":\"Copperbelt\",\"ZM-09\":\"Lusaka\",\"ZM-10\":\"Muchinga\"}}","i18n_select_state_text":"Elige una opci\u00f3n\u2026","i18n_no_matches":"No se han encontrado coincidencias","i18n_ajax_error":"Error al cargar","i18n_input_too_short_1":"Por favor, introduce 1 o m\u00e1s caracteres","i18n_input_too_short_n":"Por favor, introduce %qty% o m\u00e1s caracteres","i18n_input_too_long_1":"Por favor, borra 1 car\u00e1cter.","i18n_input_too_long_n":"Por favor borra %qty% caracteres","i18n_selection_too_long_1":"Solo puedes seleccionar 1 art\u00edculo","i18n_selection_too_long_n":"Solo puedes seleccionar %qty% art\u00edculos","i18n_load_more":"Cargando m\u00e1s resultados\u2026","i18n_searching":"Buscando\u2026"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/frontend/country-select.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_address_i18n_params = {"locale":"{\"AE\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"required\":false}},\"AF\":{\"state\":{\"required\":false}},\"AO\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"label\":\"Provincia\"}},\"AT\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"AU\":{\"city\":{\"label\":\"Barrio residencial\"},\"postcode\":{\"label\":\"C\\u00f3digo postal\"},\"state\":{\"label\":\"Provincia\"}},\"AX\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"BD\":{\"postcode\":{\"required\":false},\"state\":{\"label\":\"Barrio\"}},\"BE\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"label\":\"Provincia\"}},\"BH\":{\"postcode\":{\"required\":false},\"state\":{\"required\":false}},\"BI\":{\"state\":{\"required\":false}},\"BO\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"BS\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"CA\":{\"postcode\":{\"label\":\"C\\u00f3digo postal\"},\"state\":{\"label\":\"Provincia\"}},\"CH\":{\"postcode\":{\"priority\":65},\"state\":{\"label\":\"Cant\\u00f3n\",\"required\":false}},\"CL\":{\"city\":{\"required\":true},\"postcode\":{\"required\":false},\"state\":{\"label\":\"Regi\\u00f3n\"}},\"CN\":{\"state\":{\"label\":\"Provincia\"}},\"CO\":{\"postcode\":{\"required\":false}},\"CZ\":{\"state\":{\"required\":false}},\"DE\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"DK\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"EE\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"FI\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"FR\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"GH\":{\"postcode\":{\"required\":false},\"state\":{\"label\":\"Regi\\u00f3n\"}},\"GP\":{\"state\":{\"required\":false}},\"GF\":{\"state\":{\"required\":false}},\"GR\":{\"state\":{\"required\":false}},\"HK\":{\"postcode\":{\"required\":false},\"city\":{\"label\":\"Localidad \\\/ Distrito\"},\"state\":{\"label\":\"Regi\\u00f3n\"}},\"HU\":{\"state\":{\"label\":\"Provincia\"}},\"ID\":{\"state\":{\"label\":\"Provincia\"}},\"IE\":{\"postcode\":{\"required\":false,\"label\":\"Eircode\"},\"state\":{\"label\":\"Provincia\"}},\"IS\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"IL\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"IM\":{\"state\":{\"required\":false}},\"IT\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":true,\"label\":\"Provincia\"}},\"JP\":{\"last_name\":{\"class\":[\"form-row-first\"],\"priority\":10},\"first_name\":{\"class\":[\"form-row-last\"],\"priority\":20},\"postcode\":{\"class\":[\"form-row-first\"],\"priority\":65},\"state\":{\"label\":\"Prefectura\",\"class\":[\"form-row-last\"],\"priority\":66},\"city\":{\"priority\":67},\"address_1\":{\"priority\":68},\"address_2\":{\"priority\":69}},\"KR\":{\"state\":{\"required\":false}},\"KW\":{\"state\":{\"required\":false}},\"LV\":{\"state\":{\"label\":\"Municipio\",\"required\":false}},\"LB\":{\"state\":{\"required\":false}},\"MQ\":{\"state\":{\"required\":false}},\"MT\":{\"state\":{\"required\":false}},\"MZ\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"label\":\"Provincia\"}},\"NL\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"label\":\"Provincia\"}},\"NG\":{\"postcode\":{\"label\":\"C\\u00f3digo postal\",\"required\":false,\"hidden\":true},\"state\":{\"label\":\"Provincia\"}},\"NZ\":{\"postcode\":{\"label\":\"C\\u00f3digo postal\"},\"state\":{\"required\":false,\"label\":\"Regi\\u00f3n\"}},\"NO\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"NP\":{\"state\":{\"label\":\"Provincia \\\/ Zona\"},\"postcode\":{\"required\":false}},\"PL\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"PT\":{\"state\":{\"required\":false}},\"RE\":{\"state\":{\"required\":false}},\"RO\":{\"state\":{\"label\":\"Provincia\",\"required\":true}},\"RS\":{\"state\":{\"required\":false,\"hidden\":true}},\"SG\":{\"state\":{\"required\":false},\"city\":{\"required\":false}},\"SK\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"SI\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false}},\"SR\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"ES\":{\"postcode\":{\"priority\":65},\"state\":{\"label\":\"Provincia\"}},\"LI\":{\"postcode\":{\"priority\":65},\"state\":{\"label\":\"Municipio\",\"required\":false}},\"LK\":{\"state\":{\"required\":false}},\"LU\":{\"state\":{\"required\":false}},\"MD\":{\"state\":{\"label\":\"Municipio \\\/ Barrio\"}},\"SE\":{\"postcode\":{\"priority\":65},\"state\":{\"required\":false,\"hidden\":true}},\"TR\":{\"postcode\":{\"priority\":65},\"state\":{\"label\":\"Provincia\"}},\"UG\":{\"postcode\":{\"required\":false,\"hidden\":true},\"city\":{\"label\":\"Ciudad \\\/ pueblo\",\"required\":true},\"state\":{\"label\":\"Barrio\",\"required\":true}},\"US\":{\"postcode\":{\"label\":\"C\\u00f3digo postal\"},\"state\":{\"label\":\"Provincia\"}},\"GB\":{\"postcode\":{\"label\":\"C\\u00f3digo postal\"},\"state\":{\"label\":\"Provincia\",\"required\":false}},\"ST\":{\"postcode\":{\"required\":false,\"hidden\":true},\"state\":{\"label\":\"Barrio\"}},\"VN\":{\"state\":{\"required\":false,\"hidden\":true},\"postcode\":{\"priority\":65,\"required\":false,\"hidden\":false},\"address_2\":{\"required\":false,\"hidden\":true}},\"WS\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"YT\":{\"state\":{\"required\":false}},\"ZA\":{\"state\":{\"label\":\"Provincia\"}},\"ZW\":{\"postcode\":{\"required\":false,\"hidden\":true}},\"default\":{\"first_name\":{\"label\":\"Nombre\",\"required\":true,\"class\":[\"form-row-first\"],\"autocomplete\":\"given-name\",\"priority\":10},\"last_name\":{\"label\":\"Apellidos\",\"required\":true,\"class\":[\"form-row-last\"],\"autocomplete\":\"family-name\",\"priority\":20},\"company\":{\"label\":\"Nombre de la empresa\",\"class\":[\"form-row-wide\"],\"autocomplete\":\"organization\",\"priority\":30,\"required\":false},\"country\":{\"type\":\"country\",\"label\":\"Pa\\u00eds\\\/Regi\\u00f3n\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\",\"update_totals_on_change\"],\"autocomplete\":\"country\",\"priority\":40},\"address_1\":{\"label\":\"Direcci\\u00f3n de la calle\",\"placeholder\":\"N\\u00famero de la casa y nombre de la calle\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line1\",\"priority\":50},\"address_2\":{\"placeholder\":\"Apartamento, habitaci\\u00f3n, etc. (opcional)\",\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line2\",\"priority\":60,\"required\":false},\"city\":{\"label\":\"Localidad \\\/ Ciudad\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-level2\",\"priority\":70},\"state\":{\"type\":\"state\",\"label\":\"Regi\\u00f3n \\\/ Provincia\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"state\"],\"autocomplete\":\"address-level1\",\"priority\":80},\"postcode\":{\"label\":\"C\\u00f3digo postal\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"postcode\"],\"autocomplete\":\"postal-code\",\"priority\":90}},\"MX\":{\"first_name\":{\"label\":\"Nombre\",\"required\":true,\"class\":[\"form-row-first\"],\"autocomplete\":\"given-name\",\"priority\":10},\"last_name\":{\"label\":\"Apellidos\",\"required\":true,\"class\":[\"form-row-last\"],\"autocomplete\":\"family-name\",\"priority\":20},\"company\":{\"label\":\"Nombre de la empresa\",\"class\":[\"form-row-wide\"],\"autocomplete\":\"organization\",\"priority\":30,\"required\":false},\"country\":{\"type\":\"country\",\"label\":\"Pa\\u00eds\\\/Regi\\u00f3n\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\",\"update_totals_on_change\"],\"autocomplete\":\"country\",\"priority\":40},\"address_1\":{\"label\":\"Direcci\\u00f3n de la calle\",\"placeholder\":\"N\\u00famero de la casa y nombre de la calle\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line1\",\"priority\":50},\"address_2\":{\"placeholder\":\"Apartamento, habitaci\\u00f3n, etc. (opcional)\",\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-line2\",\"priority\":60,\"required\":false},\"city\":{\"label\":\"Localidad \\\/ Ciudad\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"autocomplete\":\"address-level2\",\"priority\":70},\"state\":{\"type\":\"state\",\"label\":\"Regi\\u00f3n \\\/ Provincia\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"state\"],\"autocomplete\":\"address-level1\",\"priority\":80},\"postcode\":{\"label\":\"C\\u00f3digo postal\",\"required\":true,\"class\":[\"form-row-wide\",\"address-field\"],\"validate\":[\"postcode\"],\"autocomplete\":\"postal-code\",\"priority\":90}}}","locale_fields":"{\"address_1\":\"#billing_address_1_field, #shipping_address_1_field\",\"address_2\":\"#billing_address_2_field, #shipping_address_2_field\",\"state\":\"#billing_state_field, #shipping_state_field, #calc_shipping_state_field\",\"postcode\":\"#billing_postcode_field, #shipping_postcode_field, #calc_shipping_postcode_field\",\"city\":\"#billing_city_field, #shipping_city_field, #calc_shipping_city_field\"}","i18n_required_text":"obligatorio","i18n_optional_text":"opcional"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/frontend/address-i18n.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_params = {"ajax_url":"\/www\/vivavivero\/wordpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/www\/vivavivero\/wordpress\/?wc-ajax=%%endpoint%%","update_shipping_method_nonce":"9206a7c6e2","apply_coupon_nonce":"51b27ec383","remove_coupon_nonce":"8284cdc313"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/frontend/cart.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/www\/vivavivero\/wordpress\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/www\/vivavivero\/wordpress\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_c2c3139358296fc2378b1da7524db1bc","fragment_name":"wc_fragments_c2c3139358296fc2378b1da7524db1bc","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_single_product_params = {"i18n_required_rating_text":"Por favor elige una puntuaci\u00f3n","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/default/js/skip-link-focus-fix.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/slick/js/slick.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/sidr/js/jquery.sidr.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/theiaStickySidebar/theia-sticky-sidebar.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/jquery-match-height/js/jquery.matchHeight.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/wow/js/wow.min.js"></script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/twp/js/script.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var store_lite_ajax = {"ajax_url":"https:\/\/vainil.github.io\/viva_vivero\/wp-admin\/admin-ajax.php","loadmore":"Load More","nomore":"No More Posts","loading":"Loading..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vainil.github.io/viva_vivero/wp-content/themes/store-lite/assets/lib/twp/js/ajax.js"></script>
+
+</body>
+</html>
